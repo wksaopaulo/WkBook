@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/text
+END
+embedAllFonts.as
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/text/embedAllFonts.as
+END
+KeyManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/text/KeyManager.as
+END
+replaceTextField.as
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/text/replaceTextField.as
+END
+embedFonts.as
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/text/embedFonts.as
+END

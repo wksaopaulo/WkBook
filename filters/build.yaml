@@ -1,0 +1,24 @@
+---
+default:
+    - debug: true
+      open: public/Effect1.swf
+      extras: -use-network=false -static-link-runtime-shared-libraries
+    
+library-path:
+    - source/swc
+
+source-path:
+    - source/classes
+    - source/libs
+    
+applications:
+    - class: source/classes/effects/Effect1.as
+      output: public/Effect1.swf
+      # exclude: source/classes/Other.as
+
+# asdoc:
+#     title: "My ActionScript project"
+#     footer: "My ActionScript project footer"
+#     output: docs/
+#     exclude-dirs: 
+#       - source/classes/caurina/

@@ -1,0 +1,67 @@
+10
+
+dir
+197
+http://svn.gringo.nu/cclp_2011/trunk/source/libs/dupin
+http://svn.gringo.nu/cclp_2011
+
+
+
+2011-06-10T13:36:14.574741Z
+179
+janio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a7f842d5-486f-e011-b50b-00101832f010
+
+parsers
+dir
+
+ugly
+dir
+
+utils
+dir
+
+text
+dir
+
+display
+dir
+
+debug
+dir
+
+net
+dir
+
+particles
+dir
+
+video
+dir
+
+behaviours
+dir
+
+math
+dir
+
+date
+dir
+
+ui
+dir
+

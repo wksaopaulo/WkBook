@@ -1,0 +1,442 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dis",
+				"display: display: block"
+			],
+			[
+				"for",
+				"for: for each"
+			],
+			[
+				"Bitm",
+				"BitmapData"
+			],
+			[
+				"Ev",
+				"Event"
+			],
+			[
+				"sou",
+				"soundCount"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "build.yaml",
+			"settings":
+			{
+				"buffer_size": 507,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/classes/base/Effect.as",
+			"settings":
+			{
+				"buffer_size": 410,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/Effect1.as",
+		"/Users/lucasdupin/Desktop/fanpage_new/index.php",
+		"/Users/lucasdupin/Downloads/examples_4_0_0_broomstick/src/LoaderOBJTest.as",
+		"/Volumes/http/wc14brief/index.html",
+		"/Volumes/http/en copy.php",
+		"/Users/lucasdupin/src/humanequalizer/README.markdown",
+		"/Users/lucasdupin/Downloads/file_id.diz",
+		"/Users/lucasdupin/Desktop/search.json?q=%23eusouassim",
+		"/Users/lucasdupin/src/delvalle/source/classes/delvalle/cv/HSVThresholder.as",
+		"/Users/lucasdupin/src/delvalle/source/libs/dupin/display/drawRect.as",
+		"/Users/lucasdupin/src/delvalle/source/classes/delvalle/cv/HSVThreshold.pbk",
+		"/Users/lucasdupin/src/delvalle/source/classes/delvalle/cv/CameraReader.as",
+		"/Users/lucasdupin/src/delvalle/source/classes/delvalle/views/MainView.as",
+		"/Users/lucasdupin/src/delvalle/public/index-debug.html",
+		"/Users/lucasdupin/src/delvalle/source/classes/delvalle/cv/Sobel.pbk",
+		"/Users/lucasdupin/src/delvalle/source/classes/delvalle_loader.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/classes/tweetdrum_main.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/classes/tweetdrum_loader.as",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/modules/dependencies/Dependencies.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/public/index-debug.html",
+		"/Users/lucasdupin/src/tweedrum/frontend/public/data/main.yaml",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/modules/media/soundlib/SoundClip.as",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/modules/navigation/NavigationController.as",
+		"/Users/lucasdupin/src/Potato/source/libs/com/greensock/loading/LoaderMax.as",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/modules/media/soundlib/SoundLibrary.as",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/modules/media/soundlib/sound.as",
+		"/Users/lucasdupin/src/Potato/template/source/classes/loader.as",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/core/config/JSONConfig.as",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/modules/navigation/ViewLoader.as",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/modules/navigation/View.as",
+		"/Users/lucasdupin/src/Potato/source/classes/potato/modules/navigation/IView.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/classes/tweetdrum/views/MainView.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/build.yaml",
+		"/Users/lucasdupin/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/lucasdupin/src/tweedrum/frontend/Rakefile",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/classes/tweetdrum/views/DecoderView.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/libs/potato/modules/navigation/View.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/libs/potato/modules/navigation/IView.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/libs/potato/modules/navigation/NavigationController.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/libs/com/adobe/utils/StringUtil.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/public/mockdata/1.drum",
+		"/Users/lucasdupin/src/tweedrum/frontend/source/libs/potato/modules/dependencies/Dependencies.as",
+		"/Users/lucasdupin/src/tweedrum/frontend/public/index.html"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 85.0,
+		"include_history":
+		[
+			""
+		],
+		"location_history":
+		[
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"__autoload",
+			"33",
+			"poster",
+			"i",
+			"rgb2Hex",
+			"filters",
+			"shader",
+			"_queue",
+			"onViewLoaded",
+			"JSON.dec",
+			"IView",
+			"start"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "build.yaml",
+					"settings":
+					{
+						"buffer_size": 507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/classes/base/Effect.as",
+					"settings":
+					{
+						"buffer_size": 410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								339
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ActionScript3/ActionScript 3.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 92.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"hsvas",
+				"source/classes/delvalle/cv/HSVThresholder.as"
+			],
+			[
+				"dra",
+				"source/libs/dupin/display/drawRect.as"
+			],
+			[
+				"drar",
+				"source/libs/dupin/display/drawRect.as"
+			],
+			[
+				"hsvtpb",
+				"source/classes/delvalle/cv/HSVThreshold.pbk"
+			],
+			[
+				"hsvtr",
+				"source/classes/delvalle/cv/HSVThresholder.as"
+			],
+			[
+				"mainvi",
+				"source/classes/delvalle/views/MainView.as"
+			],
+			[
+				"hsv",
+				"source/classes/delvalle/cv/HSVThreshold.pbk"
+			],
+			[
+				"indede",
+				"public/index-debug.html"
+			],
+			[
+				"loader",
+				"source/classes/delvalle_loader.as"
+			],
+			[
+				"1.dr",
+				"frontend/public/mockdata/1.drum"
+			],
+			[
+				".drum",
+				"frontend/public/mockdata/1.drum"
+			],
+			[
+				"index",
+				"frontend/public/index-debug.html"
+			],
+			[
+				"main",
+				"frontend/public/data/main.yaml"
+			],
+			[
+				"mainya",
+				"frontend/public/data/main.yaml"
+			],
+			[
+				"main.as",
+				"frontend/source/classes/tweetdrum_main.as"
+			],
+			[
+				"soun",
+				"source/classes/potato/modules/media/soundlib/SoundClip.as"
+			],
+			[
+				"depende",
+				"source/classes/potato/modules/dependencies/Dependencies.as"
+			],
+			[
+				"depen",
+				"source/classes/potato/modules/dependencies/Dependencies.as"
+			],
+			[
+				"depend",
+				"source/classes/potato/modules/dependencies/Dependencies.as"
+			],
+			[
+				"soundli",
+				"source/classes/potato/modules/media/soundlib/SoundLibrary.as"
+			],
+			[
+				"soundl",
+				"source/classes/potato/modules/media/soundlib/SoundLibrary.as"
+			],
+			[
+				"navigatio",
+				"source/classes/potato/modules/navigation/NavigationController.as"
+			],
+			[
+				"soun.as",
+				"source/classes/potato/modules/media/soundlib/sound.as"
+			],
+			[
+				"ain",
+				"frontend/public/data/main.yaml"
+			],
+			[
+				"jsoncon",
+				"source/classes/potato/core/config/JSONConfig.as"
+			],
+			[
+				"view",
+				"source/classes/potato/modules/navigation/View.as"
+			],
+			[
+				"iview",
+				"source/classes/potato/modules/navigation/IView.as"
+			],
+			[
+				"loader.as",
+				"frontend/source/classes/tweetdrum_loader.as"
+			],
+			[
+				"decoder",
+				"frontend/source/classes/tweetdrum/views/DecoderView.as"
+			],
+			[
+				"",
+				"frontend/build.yaml"
+			],
+			[
+				"viewloa",
+				"source/classes/potato/modules/navigation/ViewLoader.as"
+			],
+			[
+				"naviga",
+				"source/classes/potato/modules/navigation/NavigationController.as"
+			],
+			[
+				"rake",
+				"Rakefile"
+			],
+			[
+				"bui",
+				"build.yaml"
+			],
+			[
+				"string",
+				"source/libs/com/adobe/utils/StringUtil.as"
+			],
+			[
+				"dependen",
+				"source/libs/potato/modules/dependencies/Dependencies.as"
+			],
+			[
+				"drum",
+				"public/mockdata/1.drum"
+			],
+			[
+				"inde",
+				"public/index.html"
+			],
+			[
+				"mainy",
+				"public/data/main.yaml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}

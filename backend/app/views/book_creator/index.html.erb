@@ -1,0 +1,16 @@
+<%= form_for current_user, as: 'post', url: url_for(action: :preview) do |f| %>
+  <%= f.label :template_picture, 'Picture' %>
+  <%= f.file_field :template_picture %>
+  <%= f.hidden_field :template_picture_cache %>
+  <%= f.label :template_text, 'Message' %>
+  <%= f.text_area :template_text %>
+
+  <ul class="jCarousel">
+    <% @templates.each do |t| %>
+      <li><%= image_tag t.preview %></li>
+    <% end %>
+  </ul>
+
+
+  <%= f.submit value: 'Next'%>
+<% end %>

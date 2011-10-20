@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/particles/motion
+END
+PerlinMotion.as
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/particles/motion/PerlinMotion.as
+END
+IParticleMotion.as
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/particles/motion/IParticleMotion.as
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/cclp_2011/!svn/ver/128/trunk/source/libs/dupin/ui
+END
+CommonText.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/CommonText.as
+END
+StretchTextButton.as
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/StretchTextButton.as
+END
+Scroll.as
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/Scroll.as
+END
+ButtonController.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/ButtonController.as
+END
+Combo.as
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/Combo.as
+END
+Dock.as
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/Dock.as
+END
+SnapScroll.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/SnapScroll.as
+END
+IceSlidingClip.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/IceSlidingClip.as
+END
+Visor.as
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/cclp_2011/!svn/ver/128/trunk/source/libs/dupin/ui/Visor.as
+END
+AutoCompleteTrigger.as
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/cclp_2011/!svn/ver/74/trunk/source/libs/dupin/ui/AutoCompleteTrigger.as
+END
+Checkbox.as
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/Checkbox.as
+END
+TextScroller.as
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/cclp_2011/!svn/ver/3/trunk/source/libs/dupin/ui/TextScroller.as
+END
+Modal.as
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/cclp_2011/!svn/ver/28/trunk/source/libs/dupin/ui/Modal.as
+END

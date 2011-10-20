@@ -1,0 +1,2 @@
+module BookCreatorHelper
+end
