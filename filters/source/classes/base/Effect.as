@@ -42,7 +42,7 @@ package base
 				//do some setup
 				setup(function():void{
 					//Custom effect initialization
-					addPageSizedChild(getProcessedImage(1));
+					addPageSizedChild(getProcessedImage(0.5));
 				})
 			})
 			l.load(new URLRequest(loaderInfo.parameters['image'] || "testImage.jpg"));
@@ -68,7 +68,7 @@ package base
 		public function set amount(value:Number):void
 		{
 			removeAllChildren(bookCanvas);
-			addPageSizedChild(getProcessedImage(value));
+			addPageSizedChild(getProcessedImage(Math.max(value, 0.1)));
 		}
 
 		/*
@@ -146,7 +146,7 @@ package base
             o.filters = o.filters.concat([new ColorMatrixFilter(m)]);
 		}
 
-		protected function getInProportion(o:DisplayObject, width:Number, height:Number):Bitmap
+		protected function getInProportion(o:DisplayObject, width:int, height:int):Bitmap
 		{
 			var r:Bitmap = new Bitmap(new BitmapData(width, height));
 			var cp:Bitmap = new Bitmap(bitmapData(o));
