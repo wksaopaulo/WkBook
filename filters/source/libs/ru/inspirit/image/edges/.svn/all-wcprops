@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/214/trunk/classes/ru/inspirit/image/edges
+END
+SobelEdgeDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/214/trunk/classes/ru/inspirit/image/edges/SobelEdgeDetector.as
+END
+CannyEdgeDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/210/trunk/classes/ru/inspirit/image/edges/CannyEdgeDetector.as
+END

@@ -45,7 +45,7 @@ package effects
            var resizedImage2:Bitmap = getInProportion(image, 1024, 768);
            resizedImage2.bitmapData.copyChannel(resizedImage.bitmapData, resizedImage.bitmapData.rect, new Point, BitmapDataChannel.RED, BitmapDataChannel.RED);
 
-           return resizedImage2;
+           return getInProportion(resizedImage2, BOOK_WIDTH, BOOK_HEIGHT);
     	}
     }
 } 

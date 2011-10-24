@@ -6,7 +6,7 @@ package dupin.display{
     import flash.display.BitmapData;
     import flash.display.Stage;
 
-    public function bitmapData(o:DisplayObject, colorBounds:Boolean=false):BitmapData{
+    public function bitmapData(o:DisplayObject, colorBounds:Boolean=false, matrix:Matrix=null):BitmapData{
 	
 		if(!o is Stage){
 			var oldX:Number=o.x;
@@ -16,7 +16,7 @@ package dupin.display{
 
 		//Default bitmap with all content
 		var b:BitmapData = new BitmapData(Math.max(o.width, 1), Math.max(o.height,1), true, 0x0);
-		var m:Matrix = new Matrix(); //Default matrix with no transformation
+		var m:Matrix = matrix || new Matrix(); //Default matrix with no transformation
 
 		if(colorBounds){
 			b.draw(o);

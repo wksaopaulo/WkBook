@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/232/trunk/classes/ru/inspirit/asfeat/geom
+END
+AffinityEstimator.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/232/trunk/classes/ru/inspirit/asfeat/geom/AffinityEstimator.as
+END
+Rodrigues.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/220/trunk/classes/ru/inspirit/asfeat/geom/Rodrigues.as
+END
+HomographyEstimator.as
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/232/trunk/classes/ru/inspirit/asfeat/geom/HomographyEstimator.as
+END
+FundamentalEstimator.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/232/trunk/classes/ru/inspirit/asfeat/geom/FundamentalEstimator.as
+END
+ModelEstimator.as
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/232/trunk/classes/ru/inspirit/asfeat/geom/ModelEstimator.as
+END
+LevenbergMarquardt.as
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/232/trunk/classes/ru/inspirit/asfeat/geom/LevenbergMarquardt.as
+END
