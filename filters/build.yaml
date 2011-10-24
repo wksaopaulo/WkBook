@@ -1,7 +1,7 @@
 ---
 default:
     - debug: true
-      open: public/Effect6.swf
+      open: public/Effect9.swf
       extras: -use-network=false -static-link-runtime-shared-libraries
     
 library-path:
@@ -12,8 +12,8 @@ source-path:
     - source/libs
     
 applications:
-    - class: source/classes/effects/Effect6.as
-      output: public/Effect6.swf
+    - class: source/classes/effects/Effect9.as
+      output: public/Effect9.swf
       # exclude: source/classes/Other.as
 
 # asdoc:
