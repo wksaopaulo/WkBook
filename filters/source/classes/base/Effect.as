@@ -1,5 +1,6 @@
 package base
 {
+	import flash.external.ExternalInterface;
 	import dupin.display.removeAllChildren;
 	import dupin.display.bitmapData;
 	import flash.display.BitmapData;
@@ -36,13 +37,16 @@ package base
 			//Load initial image
 			var l:Loader = new Loader()
 			l.contentLoaderInfo.addEventListener(Event.COMPLETE, function(e:Event):void{
-				trace("loaded")
 				image = l.content as Bitmap;
 
 				//do some setup
 				setup(function():void{
-					//Custom effect initialization
-					addPageSizedChild(getProcessedImage(0.5));
+					//Apply effect with 50% strength
+					setAmount(0.5);
+
+					//Enabling customization
+					if(ExternalInterface.available)
+						ExternalInterface.addCallback("setAmount", setAmount);
 				})
 			})
 			l.load(new URLRequest(loaderInfo.parameters['image'] || "testImage.jpg"));
@@ -65,7 +69,7 @@ package base
 		}
 
 		//amount of effect, method to override
-		public function set amount(value:Number):void
+		public function setAmount(value:Number):void
 		{
 			removeAllChildren(bookCanvas);
 			addPageSizedChild(getProcessedImage(Math.max(value, 0.1)));
@@ -126,8 +130,6 @@ package base
 				0, 0, 1, 0
 			];
 
-			trace("book is " + BOOK_WIDTH + " x " + BOOK_HEIGHT);
-
 			o.filters = o.filters.concat([new ColorMatrixFilter(m)]);
 		}
 
@@ -148,7 +150,7 @@ package base
 
 		protected function getInProportion(o:DisplayObject, width:int, height:int):Bitmap
 		{
-			var r:Bitmap = new Bitmap(new BitmapData(width, height));
+			var r:Bitmap = new Bitmap(new BitmapData(width, height, true, 0x0));
 			var cp:Bitmap = new Bitmap(bitmapData(o));
 
 			//Put in the size we want

@@ -25,7 +25,7 @@ package effects
         override protected function getProcessedImage(amount:Number):DisplayObject
     	{
            //Minimum size and limit
-           amount *= 0.03 + 0.01;
+           amount *= 0.06 + 0.01;
 
            //Pixelate to the final number of rows
            var smallImg:Bitmap = getInProportion(image, BOOK_WIDTH*amount, BOOK_HEIGHT*amount);
@@ -33,9 +33,14 @@ package effects
            var pixelSize:int = BOOK_WIDTH/smallImg.width;
 
            var result:Sprite = new Sprite();
+
+           result.graphics.beginFill(0xffda0f);
+           result.graphics.drawRect(0, 0, BOOK_WIDTH, BOOK_HEIGHT);
+           result.graphics.endFill();
+
            var m:Matrix = new Matrix;
            m.createGradientBox(BOOK_WIDTH, BOOK_HEIGHT, Math.PI/2);
-           result.graphics.beginGradientFill(GradientType.LINEAR, [0xff00ff, 0x00ff00], [1, 1], [0, 255], m, InterpolationMethod.RGB);
+           result.graphics.beginGradientFill(GradientType.LINEAR, [0xff00ff, 0x00ff00], [1, 1], [70, 255], m, InterpolationMethod.RGB);
            for (var y:int = 0; y < smallImg.height; y++)
            {
                 for (var x:int = 0; x < smallImg.width; x++)

@@ -297,7 +297,7 @@ class FCSHDServer
   def status
     begin
       http = Net::HTTP.new(HOST, PORT)
-      resp, date = http.get('/status	')
+      resp, date = http.get('/status')
       resp.body
     rescue Exception => e
       "down"
