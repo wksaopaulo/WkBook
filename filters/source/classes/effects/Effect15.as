@@ -71,7 +71,6 @@ package effects
           matrix.scale(mountainScale, mountainScale);
           bigMountain.bitmapData.draw(mountain, matrix);
 
-          amount = 3;
           if(amount <= 0.33) {
 
             var m1:Bitmap = new Bitmap(bitmapData(bigMountain));
