@@ -33,9 +33,12 @@ package effects
           var mosaic:Mosaic = new Mosaic(), i:int=0;
           while (mosaic.hasOwnProperty("tri" + ++i))
           {
+            var pos:Number = ((i*0.47) % 1) * amount;
+            var pos2:Number = ((i*0.12) % 1) * amount;
+
             var cp:Bitmap = new Bitmap(new BitmapData(image.width, image.height));
             var m:Matrix = new Matrix();
-            m.translate(-image.width/2*1*Math.random(), -image.height/2*1*Math.random());
+            m.translate(-image.width/2*1*(pos), -image.height/2*1*(pos2));
             m.scale(2, 2);
             cp.bitmapData.draw(image, m);
 
