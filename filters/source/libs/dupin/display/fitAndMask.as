@@ -17,11 +17,11 @@ package dupin.display {
         if(mask.parent) {
             target.x = mask.x;
             target.y = mask.y;
-            mask.parent.addChild(target);
+            mask.parent.addChildAt(target, mask.parent.getChildIndex(mask));
         } else if(target.parent) {
             mask.x = target.x;
             mask.y = target.y;
-            target.parent.addChild(mask);
+            target.parent.addChildAt(mask, target.parent.getChildIndex(target));
         }
         
         //Centralize
