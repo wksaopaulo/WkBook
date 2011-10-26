@@ -21699,3 +21699,492 @@ Served asset /home.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-26 17:47:53 -0200
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-10-26 18:11:45 -0200
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gx/dZkD6NZ4VlGiLTWR8AbTYg714F+sS74Ppte/cPQY=", "user"=>{"email"=>"lucas.dupin@wk.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'lucas.dupin@wk.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2011-10-26 12:28:08.034475', "current_sign_in_at" = '2011-10-26 20:11:46.073955', "sign_in_count" = 3, "updated_at" = '2011-10-26 20:11:46.076035' WHERE "users"."id" = 1
+Redirected to http://0.0.0.0:3000/book_creator
+Completed 302 Found in 285ms
+
+
+Started GET "/book_creator" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+  Processing by BookCreatorController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.2ms)[0m  SELECT "templates".* FROM "templates" 
+Rendered book_creator/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 126ms (Views: 19.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/w.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /w.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder3.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder4.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder5.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder1.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder2.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder6.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder7.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder8.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder8.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder9.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder10.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /upload_placeholder10.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plus.png" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /plus.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/k.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /k.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder1.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /type_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder2.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /type_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder3.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /type_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder4.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /type_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder5.jpg" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /type_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ok.png" for 127.0.0.1 at 2011-10-26 18:11:46 -0200
+Served asset /ok.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+  Processing by BookCreatorController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.2ms)[0m  SELECT "templates".* FROM "templates" 
+Rendered book_creator/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 90ms (Views: 19.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /application.css - 304 Not Modified (58ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/w.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /w.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder1.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder3.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder4.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder5.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder2.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder6.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder7.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder8.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder8.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder9.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder10.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /upload_placeholder10.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plus.png" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /plus.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/k.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /k.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder1.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /type_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder2.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /type_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder3.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /type_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder4.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /type_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder5.jpg" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /type_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ok.png" for 127.0.0.1 at 2011-10-26 18:11:51 -0200
+Served asset /ok.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+  Processing by BookCreatorController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.2ms)[0m  SELECT "templates".* FROM "templates" 
+Rendered book_creator/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 130ms (Views: 18.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:18 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/w.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /w.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder1.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder3.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder5.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder2.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder4.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder6.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder7.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder8.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder8.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder9.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder10.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /upload_placeholder10.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plus.png" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /plus.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/k.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /k.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder1.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /type_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder2.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /type_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder3.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /type_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder4.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /type_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder5.jpg" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /type_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ok.png" for 127.0.0.1 at 2011-10-26 18:12:19 -0200
+Served asset /ok.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+  Processing by BookCreatorController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.2ms)[0m  SELECT "templates".* FROM "templates" 
+Rendered book_creator/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 126ms (Views: 18.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/w.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /w.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder1.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder2.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder4.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder5.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder3.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder6.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder7.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder8.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder8.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder9.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder9.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upload_placeholder10.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /upload_placeholder10.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plus.png" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /plus.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/k.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /k.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder1.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /type_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder2.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /type_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder3.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /type_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder4.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /type_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder5.jpg" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /type_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ok.png" for 127.0.0.1 at 2011-10-26 18:12:44 -0200
+Served asset /ok.png - 304 Not Modified (0ms)

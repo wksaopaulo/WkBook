@@ -1,5 +1,5 @@
 <%= link_to 'sair', destroy_user_session_path, :method => :delete %>
-<%= form_for current_user, as: 'post', url: url_for(action: :preview), id: 'createBook' do |f| %>
+<%= form_for current_user, as: 'post', url: url_for(action: :preview), html: {id: 'createBook'} do |f| %>
 
   <!-- W -->
   <div id="w">
