@@ -1,16 +1,36 @@
-<%= form_for current_user, as: 'post', url: url_for(action: :preview) do |f| %>
-  <%= f.label :template_picture, 'Picture' %>
-  <%= f.file_field :template_picture %>
-  <%= f.hidden_field :template_picture_cache %>
-  <%= f.label :template_text, 'Message' %>
-  <%= f.text_area :template_text %>
+<%= link_to 'sair', destroy_user_session_path, :method => :delete %>
+<%= form_for current_user, as: 'post', url: url_for(action: :preview), id: 'createBook' do |f| %>
 
-  <ul class="jCarousel">
-    <% @templates.each do |t| %>
-      <li><%= image_tag t.preview %></li>
-    <% end %>
-  </ul>
+  <!-- W -->
+  <div id="w">
+    <%= image_tag 'w.jpg' %>
+    <div class="userInput">
+      <% @images.each do |i| %>
+        <%= image_tag i %>
+      <% end %>
+    </div>
+    <%= f.file_field :template_picture %>
+    <%= f.hidden_field :template_picture_cache %>
+    <div class="hit"></div>
+  </div>
 
+  <%= image_tag 'plus.png', id: 'plus' %>
 
-  <%= f.submit value: 'Next'%>
+  <!-- K -->
+  <div id="k">
+    <%= image_tag 'k.jpg' %>
+    <div class="userInput">
+      <% 5.times do |i| %>
+        <%= image_tag "type_placeholder#{i+1}.jpg" %>
+      <% end %>
+    </div>
+  </div>
+
+  <%= f.submit type: 'image', src: asset_path('ok.png'), class: 'submit'%>
+
+  <div id="textPanel">
+    <%= f.label :template_text, "Conte a sua história" %><br>
+    <%= f.text_area :template_text, placeholder: "Lorem ipsum dolor sit amet..." %>
+  </div>
+
 <% end %>
