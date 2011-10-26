@@ -1,7 +1,7 @@
 ---
 default:
     - debug: true
-      open: public/Effect17.swf
+      open: public/Effect19.swf
       extras: -use-network=false -static-link-runtime-shared-libraries
     
 library-path:
@@ -12,8 +12,8 @@ source-path:
     - source/libs
     
 applications:
-    - class: source/classes/effects/Effect17.as
-      output: public/Effect17.swf
+    - class: source/classes/effects/Effect19.as
+      output: public/Effect19.swf
       # exclude: source/classes/Other.as
 
 # asdoc:

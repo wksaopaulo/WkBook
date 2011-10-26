@@ -13,7 +13,7 @@ package effects
 	import base.Effect;
 
 	[SWF(width='1024', height='768', backgroundColor='#FFFFFF', frameRate='60')]
-	public class Effect6 extends Effect
+	public class Effect18 extends Effect
 	{	
         private const BLUR_VAL:Number = 1000;
         private const MAX_WIDTH:Number = 10;
@@ -25,11 +25,11 @@ package effects
             var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH, BOOK_HEIGHT);
 
             //Calculate how much to resize
-            var s:Number = 0.1 + 0.2*amount;
+            var s:Number = 0.01 + 0.01*amount;
 
             //Do it
             var bmp:Bitmap = getThin(resizedImage, s);
-            bmp.transform.colorTransform = new ColorTransform(1.2, 1.1, 0.8);
+            //bmp.transform.colorTransform = new ColorTransform(1.2, 1.1, 0.8);
             
             return bmp;
     	}
