@@ -1,0 +1,23 @@
+<script type="text/javascript">
+  var params = {};
+  params.play = "false";
+  params.loop = "false";
+  params.menu = "false";
+  params.allowfullscreen = "true";
+  params.allowscriptaccess = "always";
+  
+  flashvars = {
+    image: '<%= current_user.template_picture.url %>',
+    text: "<%= (current_user.template_text || "").gsub '"', '\"' %>"
+  }
+swfobject.embedSWF("<%= @template.effect_file.url %>", "effect", "100%", "100%", "10.1.0", "<%= asset_path('expressInstall.swf')%>", flashvars, params);
+function test(){
+  console.log("hello")
+}
+</script>
+<div id="effect">
+
+</div>
+<div id="effectControls">
+  <input type="range"  min="0" max="100" />
+</div>

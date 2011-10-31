@@ -47,12 +47,10 @@ setupFormInteraction = ->
             clickEvent.stopPropagation();
         $('html').click ->
             $('#textPanel').css(display: 'none');
-        
 
-#    # Text field
-#    $('#k').hover ->
-#        $('#k textarea').css(display: 'block').focus();
-#    , ->
-#        $('#k textarea').css(display: 'none')
+    #Slider change stuff
+    $('#effectControls input[type=range]').bind 'mouseup', ->
+        $("#effect")[0].setAmount($(this).val()/100);
+        
 
 $(document).ready setupFormInteraction;

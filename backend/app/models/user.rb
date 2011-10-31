@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   mount_uploader :template_picture, BookImageUploader
 
-  has_one :template
+  belongs_to :template
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111019140823) do
+ActiveRecord::Schema.define(:version => 20111027131030) do
 
   create_table "book_admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20111019140823) do
     t.float    "effect_amount"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "effect_file"
   end
 
   create_table "users", :force => true do |t|

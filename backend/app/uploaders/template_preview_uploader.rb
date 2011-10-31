@@ -3,8 +3,8 @@
 class TemplatePreviewUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or ImageScience support:
-  # include CarrierWave::RMagick
-  # include CarrierWave::ImageScience
+  include CarrierWave::RMagick
+  #include CarrierWave::ImageScience
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -32,15 +32,15 @@ class TemplatePreviewUploader < CarrierWave::Uploader::Base
   # version :thumb do
   #   process :scale => [50, 50]
   # end
-  version :home do 
+  version :small do 
     process :resize_to_fill => [260, 275]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
-  # def extension_white_list
-  #   %w(jpg jpeg gif png)
-  # end
+  def extension_white_list
+    %w(jpg jpeg gif png)
+  end
 
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
