@@ -36,7 +36,7 @@ package effects
            deformShader.data.stretch.value = [ 2 ];
            deformShader.data.center_x.value  = [ 152 ];
            deformShader.data.center_y.value  = [ 102 ];
-           deformShader.data.imageHeight.value = [ 2024 ];
+           deformShader.data.imageHeight.value = [ 2024 + amount*1000 ];
 
            var f:ShaderFilter = new ShaderFilter(deformShader);
            resizedImage.bitmapData.applyFilter( resizedImage.bitmapData, resizedImage.bitmapData.rect, new Point, f );

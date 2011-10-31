@@ -10,11 +10,20 @@ class BookCreatorController < ApplicationController
   end
 
   def preview
-    current_user.template_picture = params['user']['template_picture'] unless params['user']['template_picture'].nil?
-    current_user.template_text = params['user']['template_text'] unless params['user']['template_text'].empty?
+    current_user.template_picture = params['user']['template_picture'] unless params['user'].nil?
+    current_user.template_text = params['user']['template_text'] unless params['user'].nil?
     current_user.save
 
-    @templates = Template.all(:include => :user).delete_if {|t| t.user.nil?}
-    @template = Template.first; current_user.template || @templates.sample
+    @templates = Template.all(:include => :user).delete_if {|t| not (t.user.nil? || t.user == current_user)}
+
+    #Did the user select a template?
+    unless params['template'].nil?
+      @template = Template.find(params['template'])
+    else
+      @template = current_user.template
+    end
+   
+    # Pick a random one...
+    @template ||= @templates.sample
   end
 end

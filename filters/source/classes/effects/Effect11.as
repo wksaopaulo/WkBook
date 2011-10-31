@@ -29,30 +29,20 @@ package effects
 
         override protected function getProcessedImage(amount:Number):DisplayObject
         {
+          amount = 0.4 + amount*0.6;
            //Create a image in the size we need
            var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH, BOOK_HEIGHT);
 
-           warpShader.data.image_h.value = [ BOOK_HEIGHT ];
-           warpShader.data.center.value  = [ BOOK_WIDTH/2 *0.5 , BOOK_HEIGHT/2 ];
-           warpShader.data.spread.value  = [ BOOK_WIDTH * 2 ];
+           warpShader.data.image_h.value = [ BOOK_HEIGHT/2 ];
+           warpShader.data.center.value  = [ BOOK_WIDTH/2 , BOOK_HEIGHT/2 ];
+           warpShader.data.spread.value  = [ BOOK_WIDTH * 4 * (amount) ];
 
            var f:ShaderFilter = new ShaderFilter(warpShader);
            resizedImage.bitmapData.applyFilter( resizedImage.bitmapData, resizedImage.bitmapData.rect, new Point, f );
 
-           var resizedImage2:Bitmap = getInProportion(image, BOOK_WIDTH, BOOK_HEIGHT);
            //resizedImage2.bitmapData.draw(resizedImage);
 
-           //Apply filter again
-           warpShader.data.center.value  = [ BOOK_WIDTH/2 * 1 , BOOK_HEIGHT/2 ];
-           warpShader.data.spread.value  = [ BOOK_WIDTH *3 ];
-           resizedImage2.bitmapData.applyFilter( resizedImage2.bitmapData, resizedImage.bitmapData.rect, new Point, f );
-
-           //Background
-           var resizedImage3:Bitmap = getInProportion(image, BOOK_WIDTH, BOOK_HEIGHT);
-           resizedImage3.bitmapData.draw(resizedImage2);
-           resizedImage3.bitmapData.draw(resizedImage);
-
-           return resizedImage3;
+           return resizedImage;
     	}
     }
 } 

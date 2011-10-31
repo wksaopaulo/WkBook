@@ -22,6 +22,8 @@ package effects
                 
 		override protected function getProcessedImage(amount:Number):DisplayObject
     	{
+    		amount += 0.5;
+    		
             //Create a image in the size we need
     		var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH/(PIXELATE*amount), BOOK_HEIGHT/(PIXELATE*amount));
 

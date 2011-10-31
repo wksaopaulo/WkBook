@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111027131030) do
+ActiveRecord::Schema.define(:version => 20111031140533) do
 
   create_table "book_admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -47,15 +47,14 @@ ActiveRecord::Schema.define(:version => 20111027131030) do
   create_table "templates", :force => true do |t|
     t.string   "name"
     t.string   "preview"
-    t.float    "effect_amount"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "effect_file"
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                                 :default => "", :null => false
-    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
+    t.string   "email",                                 :default => "",  :null => false
+    t.string   "encrypted_password",     :limit => 128, :default => "",  :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -70,6 +69,8 @@ ActiveRecord::Schema.define(:version => 20111027131030) do
     t.text     "template_text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "book_page"
+    t.float    "effect_amount",                         :default => 0.0, :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

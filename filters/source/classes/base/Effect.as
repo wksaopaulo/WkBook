@@ -1,5 +1,9 @@
 package base
 {
+	import dupin.display.safeRemoveChild;
+	import flash.utils.ByteArray;
+	import mx.graphics.codec.JPEGEncoder;
+	import flash.utils.setInterval;
 	import flash.external.ExternalInterface;
 	import dupin.display.removeAllChildren;
 	import dupin.display.bitmapData;
@@ -9,7 +13,7 @@ package base
 	import flash.display.StageScaleMode;
 	import flash.display.DisplayObject;
 	import flash.display.Bitmap;
-	import flash.events.Event;
+	import flash.events.*;
 	import flash.display.*;
 	import flash.events.*;
 	import flash.net.*;
@@ -20,10 +24,12 @@ package base
 		protected var image:Bitmap;
 		protected var text:String;
 
+		private var _result:DisplayObject;
+
 		public const CM_TO_INCH:Number = 0.393700787;
-		public const PPI:int = 300;
-		public const BOOK_WIDTH:int = 42 * CM_TO_INCH * PPI;
-		public const BOOK_HEIGHT:int = 28 * CM_TO_INCH * PPI;
+		public var PPI:int = 300;
+		public var BOOK_WIDTH:int = 42 * CM_TO_INCH * PPI;
+		public var BOOK_HEIGHT:int = 28 * CM_TO_INCH * PPI;
 
 		//Holds all book content
 		protected var bookCanvas:Sprite;
@@ -45,14 +51,17 @@ package base
 					setAmount(0.5);
 
 					//Enabling customization
-					if(ExternalInterface.available)
+					if(ExternalInterface.available){
 						ExternalInterface.addCallback("setAmount", setAmount);
+						ExternalInterface.addCallback("upload", upload)
+					} else
+						trace("No external interface available");
 				})
 			})
 			l.load(new URLRequest(loaderInfo.parameters['image'] || "testImage.jpg"));
 		  
 		  	//Get the text
-		  	this.text = loaderInfo.parameters['text'] || "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+		  	this.text = loaderInfo.parameters['text'] || "";
 		}
 
 		//Method to override
@@ -72,7 +81,38 @@ package base
 		public function setAmount(value:Number):void
 		{
 			removeAllChildren(bookCanvas);
-			addPageSizedChild(getProcessedImage(Math.max(value, 0.1)));
+			safeRemoveChild(bookCanvas);
+			bookCanvas = null;
+
+			addPageSizedChild(_result = getProcessedImage(Math.max(value, 0.1)));
+		}
+
+		//Send file to the server
+		protected function upload(url:String="/book_creator/save_image"):void
+		{
+			var encoder:JPEGEncoder = new JPEGEncoder(90);
+			var data:ByteArray = encoder.encode(bitmapData(_result));
+
+			var hdr:URLRequestHeader = new URLRequestHeader("Content-type", "application/octet-stream");
+			var req:URLRequest = new URLRequest(url);
+				req.requestHeaders.push(hdr);
+				req.data = data;
+				req.method = URLRequestMethod.POST;			
+			
+            var ldr:URLLoader = new URLLoader();
+                ldr.dataFormat = URLLoaderDataFormat.BINARY;
+                ldr.addEventListener(Event.COMPLETE, onRequestComplete);
+                ldr.addEventListener(IOErrorEvent.IO_ERROR, onRequestFailure);
+                ldr.addEventListener(SecurityErrorEvent.SECURITY_ERROR, onRequestFailure);	
+          		ldr.load(req);
+		}
+		private function onRequestComplete(e:Event):void
+		{
+			ExternalInterface.call("uploadComplete");
+		}
+		private function onRequestFailure(e:ErrorEvent):void
+		{
+			ExternalInterface.call("uploadFailed", e.toString());
 		}
 
 		/*
@@ -95,10 +135,6 @@ package base
 				super.addChild(bookCanvas);
 			}
 			return bookCanvas.addChild(o);
-		}
-		override public function removeChild(o:DisplayObject):DisplayObject
-		{
-			return bookCanvas.removeChild(o);
 		}
 
 		/*

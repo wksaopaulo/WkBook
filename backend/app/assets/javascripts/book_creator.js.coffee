@@ -49,8 +49,10 @@ setupFormInteraction = ->
             $('#textPanel').css(display: 'none');
 
     #Slider change stuff
-    $('#effectControls input[type=range]').bind 'mouseup', ->
-        $("#effect")[0].setAmount($(this).val()/100);
+    slideVal = if typeof(window.effectAmountValue) != 'undefined' then 0.5 else window.effectAmountValue
+    $("#effectControls .jslider").slider(value: slideVal, step:0.01, min: 0, max: 1).bind 'slidechange', (event, ui)->
+        val = ui.value
+        $("#effect")[0].setAmount val
         
 
 $(document).ready setupFormInteraction;

@@ -102,3 +102,37 @@
 
 }
 
+
+/* PREVIEW */
+#effectControls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: url(<%= asset_path('black_80.png') %>);
+
+  .jslider{
+    width: 95%;
+    height: 5px;
+    margin: 10px auto;
+    opacity: 0.5;
+  }
+  .ui-slider-handle{
+    width: 13px;
+    height: 13px;
+  }
+
+  #templates {
+    overflow: hidden;
+    height: 80px;
+  }
+
+  img {
+    /*box-shadow: 5px 5px 5px #ccc;*/
+    max-height: 60px;
+    margin: 5px;
+  }
+
+  img.selected {
+    border: 2px solid #fff;
+  }
+}

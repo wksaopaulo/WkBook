@@ -22,7 +22,7 @@ package effects
 		override protected function getProcessedImage(amount:Number):DisplayObject
     	{
             //Create a image in the size we need
-            var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH, BOOK_HEIGHT);
+            var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH/3, BOOK_HEIGHT/3);
 
             //Calculate how much to resize
             var s:Number = 0.01 + 0.01*amount;
@@ -43,7 +43,7 @@ package effects
             //Create a really thin image
             var thin:Bitmap = new Bitmap(new BitmapData(source.width * s, source.height, true, 0xff0000));
             thin.bitmapData.draw(source, m);
-            thin.bitmapData.applyFilter(thin.bitmapData, new Rectangle(0, 0, BOOK_WIDTH, BOOK_HEIGHT), new Point, new BlurFilter(BLUR_VAL, 0));
+            thin.bitmapData.applyFilter(thin.bitmapData, new Rectangle(0, 0, BOOK_WIDTH/2, BOOK_HEIGHT/2), new Point, new BlurFilter(BLUR_VAL, 0));
             var normal:Bitmap = new Bitmap(new BitmapData(source.width, source.height));
             m = new Matrix();
             m.scale(1/s, 1);

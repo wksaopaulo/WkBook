@@ -25,7 +25,8 @@ package effects
         override protected function getProcessedImage(amount:Number):DisplayObject
     	{
            //Minimum size and limit
-           amount *= 0.06 + 0.01;
+           amount *= 0.025;
+           amount += 0.005;
 
            //Pixelate to the final number of rows
            var smallImg:Bitmap = getInProportion(image, BOOK_WIDTH*amount, BOOK_HEIGHT*amount);
@@ -34,13 +35,14 @@ package effects
 
            var result:Sprite = new Sprite();
 
-           result.graphics.beginFill(0xffda0f);
+           //result.graphics.beginFill(0xffda0f);
+           result.graphics.beginFill(0x0);
            result.graphics.drawRect(0, 0, BOOK_WIDTH, BOOK_HEIGHT);
            result.graphics.endFill();
 
            var m:Matrix = new Matrix;
            m.createGradientBox(BOOK_WIDTH, BOOK_HEIGHT, Math.PI/2);
-           result.graphics.beginGradientFill(GradientType.LINEAR, [0xff00ff, 0x00ff00], [1, 1], [70, 255], m, InterpolationMethod.RGB);
+           result.graphics.beginGradientFill(GradientType.LINEAR, [0xff00ff, 0x00cc00], [1, 1], [70, 255], m, InterpolationMethod.RGB);
            for (var y:int = 0; y < smallImg.height; y++)
            {
                 for (var x:int = 0; x < smallImg.width; x++)
@@ -52,7 +54,7 @@ package effects
                     var lum:uint = (r + g + b) / 3;
 
                     var thisPSize:Number = pixelSize * (lum/256);
-                    result.graphics.drawRect(x*pixelSize - thisPSize/2, y*pixelSize - thisPSize/2, thisPSize, thisPSize);
+                    result.graphics.drawRect(x*pixelSize - thisPSize/2, y*pixelSize - thisPSize/2, thisPSize, thisPSize*0.6);
                 }
            }
            result.graphics.endFill();

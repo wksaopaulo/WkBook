@@ -35,9 +35,17 @@ package effects
         
 		override protected function getProcessedImage(amount:Number):DisplayObject
     	{
+           //amount += 0.7;
+            //User input
+            effectDisplace.filters = [];
+            contrast(amount, effectDisplace);
+
+            var cp:BitmapData = effectDisplace.bitmapData.clone();
+            cp.applyFilter(cp, cp.rect, new Point, effectDisplace.filters[0]);
+
             //Create a image in the size we need
-            var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH, BOOK_HEIGHT);
-            resizedImage.filters = [getFilter(effectDisplace.bitmapData)];
+            var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH/2, BOOK_HEIGHT/2);
+            resizedImage.filters = [getFilter(cp)];
 
             //Saturation
             saturate(0.3, resizedImage);

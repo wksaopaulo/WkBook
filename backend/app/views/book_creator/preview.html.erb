@@ -5,6 +5,8 @@
   params.menu = "false";
   params.allowfullscreen = "true";
   params.allowscriptaccess = "always";
+  params.bgcolor = "#000000"
+  params.wmode = "opaque";
   
   flashvars = {
     image: '<%= current_user.template_picture.url %>',
@@ -19,5 +21,16 @@ function test(){
 
 </div>
 <div id="effectControls">
-  <input type="range"  min="0" max="100" />
+  <div class="jslider" id="effectAmount"></div>
+  <div id="templates">
+  <% @templates.each do |t| 
+        is_current = @template.id == t.id ? 'selected' : ''
+  %>
+  <%= link_to image_tag(t.preview_url(:small), :class => is_current), :template => t.id %>
+  <% end %>
+  </div>
 </div>
+
+<script type="text/javascript">
+  window.effectAmountValue = <%=current_user.effect_amount%>;
+</script>

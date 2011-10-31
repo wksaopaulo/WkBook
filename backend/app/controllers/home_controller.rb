@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @user = User.all(order: 'name')
+    @users = User.all(order: 'name')
   end
 end

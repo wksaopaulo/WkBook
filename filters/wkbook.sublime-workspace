@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"onReque",
+				"onRequestFailure"
+			],
+			[
+				"Ev",
+				"Event"
+			],
+			[
+				"onRe",
+				"onRequestComplete"
+			],
+			[
+				"addC",
+				"addCallback"
+			],
+			[
 				"for",
 				"for: for"
 			],
@@ -48,10 +64,6 @@
 				"BitmapData"
 			],
 			[
-				"Ev",
-				"Event"
-			],
-			[
 				"sou",
 				"soundCount"
 			]
@@ -84,31 +96,41 @@
 	},
 	"file_history":
 	[
-		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/filters/Sobel.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect13.as",
-		"/Users/lucasdupin/src/wkbook/filters/build.yaml",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect14.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/libs/ru/inspirit/image/edges/SobelEdgeDetector.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/libs/ru/inspirit/image/edges/CannyEdgeDetector.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect12.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/bitmapData.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect17.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect11.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect10.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/shader/deformer.pbk",
-		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/utils/ValueChanger.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/shader/warp.pbk",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect18.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect6.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect8.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect4.as",
+		"/Users/lucasdupin/src/wkbook/filters/build.yaml",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect7.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect9.as",
-		"/Users/lucasdupin/src/wkbook/filters/Rakefile",
-		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/utils/extractFromMovieClip.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect12.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect8.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect10.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect1.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/removeAllChildren.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect2.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect5.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect3.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/com/greensock/plugins/BlurFilterPlugin.as",
+		"/Users/lucasdupin/Downloads/bitmap-snapshot/libs/com/quietless/bitmap/BitmapSnapshot.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/com/adobe/images/JPGEncoder.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect20.as",
+		"/Users/lucasdupin/Desktop/arrow.aep",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect15.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/bitmapData.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/fitAndMask.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/filters/Sobel.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect13.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect14.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/ru/inspirit/image/edges/SobelEdgeDetector.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/ru/inspirit/image/edges/CannyEdgeDetector.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/shader/deformer.pbk",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/utils/ValueChanger.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/shader/warp.pbk",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect4.as",
+		"/Users/lucasdupin/src/wkbook/filters/Rakefile",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/utils/extractFromMovieClip.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/Effect1.as",
 		"/Users/lucasdupin/Desktop/fanpage_new/index.php",
@@ -175,6 +197,35 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pos",
+			"amount",
+			"drop",
+			"copy",
+			"copyChanne",
+			"amount",
+			"max",
+			"BOOK_WIDTH",
+			"getInp",
+			"5",
+			"amount",
+			"4",
+			"3",
+			"addChild",
+			"addPageSizedChild",
+			"bookCanvas",
+			"addPageSizedChild",
+			"getProcessedImage",
+			"remo",
+			"amount",
+			"1",
+			"2",
+			"_image",
+			"setAmount",
+			"getInProportion",
+			"10.5",
+			"CS5.5 10.5.1",
+			"image",
+			"displ",
 			"gradXPtr",
 			"memOffset",
 			"warpShader",
@@ -204,6 +255,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"6",
+			"5",
+			"4",
+			"2",
+			"3",
+			"CS5 10.0.2",
 			"deformShader"
 		],
 		"reverse": true,
@@ -251,6 +308,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 173.0
+	},
 	"replace":
 	{
 		"height": 62.0
@@ -261,6 +322,126 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ef6",
+				"source/classes/effects/Effect6.as"
+			],
+			[
+				"ef8",
+				"source/classes/effects/Effect18.as"
+			],
+			[
+				"18",
+				"source/classes/effects/Effect18.as"
+			],
+			[
+				"17",
+				"source/classes/effects/Effect17.as"
+			],
+			[
+				"11",
+				"source/classes/effects/Effect11.as"
+			],
+			[
+				"9",
+				"source/classes/effects/Effect9.as"
+			],
+			[
+				"7",
+				"source/classes/effects/Effect7.as"
+			],
+			[
+				"eff6",
+				"source/classes/effects/Effect6.as"
+			],
+			[
+				"bui",
+				"build.yaml"
+			],
+			[
+				"eff8",
+				"source/classes/effects/Effect8.as"
+			],
+			[
+				"buil",
+				"build.yaml"
+			],
+			[
+				"12",
+				"source/classes/effects/Effect12.as"
+			],
+			[
+				"10",
+				"source/classes/effects/Effect10.as"
+			],
+			[
+				"effe6",
+				"source/classes/effects/Effect6.as"
+			],
+			[
+				"remove",
+				"source/libs/dupin/display/removeAllChildren.as"
+			],
+			[
+				"effec",
+				"source/classes/base/Effect.as"
+			],
+			[
+				"eff5",
+				"source/classes/effects/Effect5.as"
+			],
+			[
+				"build",
+				"build.yaml"
+			],
+			[
+				"effec3",
+				"source/classes/effects/Effect3.as"
+			],
+			[
+				"effe2",
+				"source/classes/effects/Effect2.as"
+			],
+			[
+				"buils",
+				"source/libs/com/greensock/plugins/BlurFilterPlugin.as"
+			],
+			[
+				"effec1",
+				"source/classes/effects/Effect1.as"
+			],
+			[
+				"effect1",
+				"source/classes/effects/Effect1.as"
+			],
+			[
+				"effect",
+				"source/classes/effects/Effect1.as"
+			],
+			[
+				"jpe",
+				"source/libs/com/adobe/images/JPGEncoder.as"
+			],
+			[
+				"6",
+				"source/classes/effects/Effect6.as"
+			],
+			[
+				"effec6",
+				"source/classes/effects/Effect6.as"
+			],
+			[
+				"effec15",
+				"source/classes/effects/Effect15.as"
+			],
+			[
+				"bitmap",
+				"source/libs/dupin/display/bitmapData.as"
+			],
+			[
+				"fitan",
+				"source/libs/dupin/display/fitAndMask.as"
+			],
 			[
 				"sobel",
 				"source/libs/dupin/filters/Sobel.as"
@@ -282,20 +463,12 @@
 				"source/classes/effects/Effect13.as"
 			],
 			[
-				"bitmap",
-				"source/libs/dupin/display/bitmapData.as"
-			],
-			[
 				"eff11",
 				"source/classes/effects/Effect11.as"
 			],
 			[
 				"effe",
 				"source/classes/effects/Effect10.as"
-			],
-			[
-				"buil",
-				"build.yaml"
 			],
 			[
 				"value",
@@ -322,20 +495,8 @@
 				"source/classes/base/Effect.as"
 			],
 			[
-				"6",
-				"source/classes/effects/Effect6.as"
-			],
-			[
 				"effe8",
 				"source/classes/effects/Effect8.as"
-			],
-			[
-				"bui",
-				"build.yaml"
-			],
-			[
-				"10",
-				"source/classes/effects/Effect10.as"
 			],
 			[
 				"rakfi",
@@ -344,10 +505,6 @@
 			[
 				"rake",
 				"Rakefile"
-			],
-			[
-				"effec",
-				"source/classes/base/Effect.as"
 			],
 			[
 				"efec.a",
@@ -362,28 +519,12 @@
 				"source/classes/effects/Effect9.as"
 			],
 			[
-				"9",
-				"source/classes/effects/Effect9.as"
-			],
-			[
-				"effec1",
-				"source/classes/effects/Effect1.as"
-			],
-			[
 				"effe7",
 				"source/classes/effects/Effect7.as"
 			],
 			[
 				"bitma",
 				"source/libs/dupin/display/bitmapData.as"
-			],
-			[
-				"eff6",
-				"source/classes/effects/Effect6.as"
-			],
-			[
-				"fitan",
-				"source/libs/dupin/display/fitAndMask.as"
 			],
 			[
 				"fit",

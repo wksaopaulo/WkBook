@@ -32,11 +32,15 @@ package effects
 		
 		override protected function getProcessedImage(amount:Number):DisplayObject
     	{
+           amount=0.55 + amount*0.45;
+           effect1Displace.filters = [];
+           contrast(amount, effect1Displace);
+
     		//Create a image in the size we need
     		var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH, BOOK_HEIGHT);
     		var displacementMap:Bitmap = getInProportion(effect1Displace, BOOK_WIDTH, BOOK_HEIGHT);
-    		
-    		//add to screen
+
+            //add to screen
     		addChild(resizedImage);
     		//addChild(displacementMap);
 

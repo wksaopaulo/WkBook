@@ -30,13 +30,15 @@ package effects
 
         override protected function getProcessedImage(amount:Number):DisplayObject
         {
+          amount = 0.4 + amount*0.6;
+          
            //Create a image in the size we need
            var resizedImage:Bitmap = getInProportion(image, 1024, 768);
 
            deformShader.data.stretch.value = [ 2 ];
            deformShader.data.center_x.value  = [ 152 ];
            deformShader.data.center_y.value  = [ 102 ];
-           deformShader.data.imageHeight.value = [ 2024 ];
+           deformShader.data.imageHeight.value = [ 2024 * amount ];
 
            var f:ShaderFilter = new ShaderFilter(deformShader);
            resizedImage.bitmapData.applyFilter( resizedImage.bitmapData, resizedImage.bitmapData.rect, new Point, f );
