@@ -61,6 +61,13 @@ package effects
             b.filters = [new DropShadowFilter()];
             b.smoothing = true;
             fitAndMask(b, mountain["front" + i], true);
+
+            var oW:Number = b.width;
+            var oH:Number = b.height;
+
+            b.scaleY = b.scaleX = b.scaleX + amount*0.1;
+            b.x -= (b.width - oW) * ((i%2 == 0) ? amount : 1-amount);
+            b.y -= (b.height - oH) * ((i%2 == 0) ? amount : 1-amount);
           }
 
           //Proportion on layout

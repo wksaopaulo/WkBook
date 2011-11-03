@@ -10,9 +10,12 @@ class BookCreatorController < ApplicationController
   end
 
   def preview
-    current_user.template_picture = params['user']['template_picture'] unless params['user'].nil?
-    current_user.template_text = params['user']['template_text'] unless params['user'].nil?
-    current_user.save
+    unless params['user'].nil?
+      current_user.template_picture = params['user']['template_picture']
+      current_user.template_text = params['user']['template_text']
+      current_user.template_title = params['user']['template_title']
+      current_user.save
+    end
 
     @templates = Template.all(:include => :user).delete_if {|t| not (t.user.nil? || t.user == current_user)}
 

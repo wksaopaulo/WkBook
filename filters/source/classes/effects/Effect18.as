@@ -15,7 +15,7 @@ package effects
 	[SWF(width='1024', height='768', backgroundColor='#FFFFFF', frameRate='60')]
 	public class Effect18 extends Effect
 	{	
-        private const BLUR_VAL:Number = 1000;
+        private const BLUR_VAL:Number = 5;
         private const MAX_WIDTH:Number = 10;
         private const MIN_WIDTH:Number = 10;
         
@@ -25,7 +25,7 @@ package effects
             var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH/3, BOOK_HEIGHT/3);
 
             //Calculate how much to resize
-            var s:Number = 0.01 + 0.01*amount;
+            var s:Number = 0.01 + 0.02*amount;
 
             //Do it
             var bmp:Bitmap = getThin(resizedImage, s);

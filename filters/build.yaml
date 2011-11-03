@@ -1,7 +1,7 @@
 ---
 default:
     - debug: true
-      open: public/Effect18.swf
+      open: public/Effect15.swf
       extras: -use-network=false -static-link-runtime-shared-libraries
     
 library-path:

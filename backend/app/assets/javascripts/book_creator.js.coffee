@@ -53,6 +53,9 @@ setupFormInteraction = ->
     $("#effectControls .jslider").slider(value: slideVal, step:0.01, min: 0, max: 1).bind 'slidechange', (event, ui)->
         val = ui.value
         $("#effect")[0].setAmount val
+
+    #Color picker
+    $('.colorpicker').colorpicker();
         
 
 $(document).ready setupFormInteraction;

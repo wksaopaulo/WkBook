@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111031140533) do
+ActiveRecord::Schema.define(:version => 20111103174630) do
 
   create_table "book_admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -71,6 +71,9 @@ ActiveRecord::Schema.define(:version => 20111031140533) do
     t.datetime "updated_at"
     t.string   "book_page"
     t.float    "effect_amount",                         :default => 0.0, :null => false
+    t.string   "template_title"
+    t.integer  "template_text_id",                      :default => 0
+    t.integer  "template_text_color"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

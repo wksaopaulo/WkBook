@@ -48,6 +48,8 @@ package effects
           var matrix:Matrix = new Matrix();
           matrix.scale(4, 4);
 
+          mosaic.tintTris.alpha = amount;
+
           var result:Bitmap = new Bitmap(new BitmapData(BOOK_WIDTH, BOOK_HEIGHT, true, 0x0));
           result.bitmapData.draw(mosaic, matrix);
 

@@ -38,7 +38,7 @@ package effects
           var displacedBmp:Bitmap = new Bitmap(new BitmapData(cp.width, cp.height, true, 0xffaaaaaa));
           displacedBmp.bitmapData.copyChannel(cp.bitmapData, cp.bitmapData.rect, new Point(-(MIN_DIST + DIST*amount), -(MIN_DIST + DIST*amount)), BitmapDataChannel.RED, BitmapDataChannel.RED);
           displacedBmp.bitmapData.copyChannel(cp.bitmapData, cp.bitmapData.rect, new Point(MIN_DIST + DIST*amount, MIN_DIST + DIST*amount), BitmapDataChannel.GREEN, BitmapDataChannel.GREEN);
-          displacedBmp.bitmapData.applyFilter(displacedBmp.bitmapData, cp.bitmapData.rect, new Point, new BlurFilter(40, 40));
+          displacedBmp.bitmapData.applyFilter(displacedBmp.bitmapData, cp.bitmapData.rect, new Point, new BlurFilter(5+40*amount, 5+40*amount));
 
           var bigImg:Bitmap = getInProportion(displacedBmp, BOOK_WIDTH, BOOK_HEIGHT);
           
