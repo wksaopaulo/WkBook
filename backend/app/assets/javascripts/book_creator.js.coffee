@@ -1,7 +1,27 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+#
+window.textColors = [0x0, 0xffffff, 0xcc0000, 0x00cc00, 0xcc00cc, 0x0000cc]
+window.setTextLayout = (id)->
+    #Tell flash what changed
+    $("#effect")[0].setTextLayout id
+    #Update interface
+    $("#textTemplates .previewText").each (idx, it) ->
+        if idx == id
+            $(it).addClass("selected")
+        else
+            $(it).removeClass("selected")
+    #Save value
+    $("form .textLayout").val(id);
 
+# Form submission flow
+window.submitPage = -> 
+    $("#effect")[0].upload();
+window.onUploadComplete = ->
+    $("form").submit();
+
+# Page setup
 setupFormInteraction = ->
     # 'Upload field' surprise image
     $('#w').hover ->
@@ -48,14 +68,22 @@ setupFormInteraction = ->
         $('html').click ->
             $('#textPanel').css(display: 'none');
 
-    #Slider change stuff
-    slideVal = if typeof(window.effectAmountValue) != 'undefined' then 0.5 else window.effectAmountValue
-    $("#effectControls .jslider").slider(value: slideVal, step:0.01, min: 0, max: 1).bind 'slidechange', (event, ui)->
-        val = ui.value
-        $("#effect")[0].setAmount val
+    #Effect slider change stuff
+    slideVal = if typeof(window.effectAmountValue) == 'undefined' then 0.5 else window.effectAmountValue
+    $("#effectAmount").slider(value: slideVal, step:0.01, min: 0, max: 1).bind 'slidechange', (event, ui)->
+        $("#effect")[0].setAmount ui.value
+        #This is the value we will send to the server
+        $("form .amount").val(ui.value);
 
-    #Color picker
-    $('.colorpicker').colorpicker();
-        
+    #Text color slider
+    slideVal = if typeof(window.textColorValue) == 'undefined' then 0 else window.textColorValue
+    $("#textColor").slider(value: slideVal, step:0.01, min: 0, max: 1).bind 'slidechange', (event, ui)->
+        c = Math.floor(ui.value * textColors.length)
+        c-- if c >= textColors.length
 
-$(document).ready setupFormInteraction;
+        $("#colorInput").
+        $("#effect")[0].setTextColor textColors[c]
+        #Value we will send to server
+        $("form .textColor").val(ui.value);
+
+$(document).ready setupFormInteraction

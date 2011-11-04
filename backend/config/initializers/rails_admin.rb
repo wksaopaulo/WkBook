@@ -61,6 +61,7 @@ RailsAdmin.config do |config|
     field :name, :string
     field :preview, :carrier_wave_image
     field :effect_file, :carrier_wave_file
+    field :text_id, :integer
     #field :effect_amount, :float
     #field :created_at, :datetime
     #field :updated_at, :datetime
