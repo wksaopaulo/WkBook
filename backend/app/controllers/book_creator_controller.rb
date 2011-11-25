@@ -29,4 +29,8 @@ class BookCreatorController < ApplicationController
     # Pick a random one...
     @template ||= @templates.sample
   end
+
+  def save_image
+    
+  end
 end

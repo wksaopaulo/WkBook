@@ -9,6 +9,7 @@ Wkbook::Application.routes.draw do
 
   match 'book_creator' => 'book_creator#index'
   match 'book_creator/preview' => 'book_creator#preview'
+  match 'book_creator/save_image' => 'book_creator#save_image'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

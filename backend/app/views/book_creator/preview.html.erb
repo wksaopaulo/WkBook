@@ -10,8 +10,8 @@
   
   flashvars = {
     image: '<%=j current_user.template_picture.url %>',
-    text: "<%=j current_user.template_text %>",
-    text_title: "<%=j current_user.template_title %>",
+    text: '', // "<%=j current_user.template_text %>",
+    text_title: '', //"<%=j current_user.template_title %>",
     text_layout: '<%= @template.text_id == nil ? current_user.template_text_id : @template.text_id %>',
     text_color: '<%= current_user.template_text_color %>'
   }
@@ -20,6 +20,11 @@ function test(){
   console.log("hello")
 }
 </script>
+<style>
+  body {
+    overflow: hidden;
+  }
+</style>
 <div id="effect">
 
 </div>
@@ -29,12 +34,17 @@ function test(){
     <input type="button" value="Salvar" class="submit" onclick="submitPage(); return false;">
   </div>
   <div id="templates">
+    <table>
+      <tr>
   <% @templates.each do |t| 
         is_current = @template.id == t.id ? 'selected' : ''
-  %>
-  <%= link_to image_tag(t.preview_url(:small), :class => is_current), :template => t.id %>
+      %>
+        <td><%= link_to image_tag(t.preview_url(:small), :class => is_current), :template => t.id %></td>
   <% end %>
+      </tr>
+    </table>
   </div>
+<!--
   <div id="textTemplates">
     <div id="textColor"></div>
     <% 11.times do |i|
@@ -43,7 +53,7 @@ function test(){
     <%= link_to_function image_tag("text_previews/text_#{i}.png", :class => "#{is_current} previewText"), "setTextLayout(#{i})" %>
     <%end if @template.text_id.nil?%>
   </div>
-  
+  -->
 </div>
 
 <script type="text/javascript">

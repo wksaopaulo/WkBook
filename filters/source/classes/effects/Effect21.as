@@ -18,14 +18,14 @@ package effects
     import base.Effect;
 
     [SWF(width='1024', height='768', backgroundColor='#FFFFFF', frameRate='60')]
-    public class Effect20 extends Effect
+    public class Effect21 extends Effect
     {   
-        private const PIXELATE:int = 70;
+        private const PIXELATE:int = 50;
+        private const PIXEL_SIZE:Number = 180;
         
         override protected function getProcessedImage(amount:Number):DisplayObject
         {
-            amount += 0.1;
-            
+
             var scale:Number = PIXELATE/amount;
 
             //Create a image in the size we need
@@ -36,8 +36,10 @@ package effects
             {
                 for (var y:int = 0; y < resizedImage.height; y++)
                 {
-                    result.graphics.beginFill(resizedImage.bitmapData.getPixel(x, y));
-                    result.graphics.drawCircle(x * scale, y * scale, 40);
+                    var pixelColor:uint = resizedImage.bitmapData.getPixel(x, y);
+                    var pixelSize:Number = luma(pixelColor)/255;
+                    result.graphics.beginFill(pixelColor);
+                    result.graphics.drawCircle(x * scale, y * scale, PIXEL_SIZE*pixelSize);
                     result.graphics.endFill();
                 }
             }

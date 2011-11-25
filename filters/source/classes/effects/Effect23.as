@@ -18,15 +18,15 @@ package effects
     import base.Effect;
 
     [SWF(width='1024', height='768', backgroundColor='#FFFFFF', frameRate='60')]
-    public class Effect20 extends Effect
+    public class Effect23 extends Effect
     {   
         private const PIXELATE:int = 70;
         
         override protected function getProcessedImage(amount:Number):DisplayObject
         {
-            amount += 0.1;
+            amount = 0.6 + amount*0.4;
             
-            var scale:Number = PIXELATE/amount;
+            var scale:Number = PIXELATE;
 
             //Create a image in the size we need
             var resizedImage:Bitmap = getInProportion(image, BOOK_WIDTH/scale, BOOK_HEIGHT/scale);
@@ -37,7 +37,7 @@ package effects
                 for (var y:int = 0; y < resizedImage.height; y++)
                 {
                     result.graphics.beginFill(resizedImage.bitmapData.getPixel(x, y));
-                    result.graphics.drawCircle(x * scale, y * scale, 40);
+                    result.graphics.drawCircle(x * scale, y * scale, 40*amount);
                     result.graphics.endFill();
                 }
             }

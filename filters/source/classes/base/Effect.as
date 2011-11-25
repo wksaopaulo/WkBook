@@ -1,5 +1,9 @@
 package base
 {
+	import mx.graphics.codec.PNGEncoder;
+	import fl.text.*;
+	import flash.text.*;
+	import flash.geom.ColorTransform;
 	import dupin.display.safeRemoveChild;
 	import flash.utils.ByteArray;
 	import mx.graphics.codec.JPEGEncoder;
@@ -23,8 +27,10 @@ package base
 	{
 		protected var image:Bitmap;
 		protected var text:String;
+		protected var title:String;
 
 		private var _result:DisplayObject;
+		private var _textColor:uint=0;
 
 		public const CM_TO_INCH:Number = 0.393700787;
 		public var PPI:int = 300;
@@ -33,12 +39,27 @@ package base
 
 		//Holds all book content
 		protected var bookCanvas:Sprite;
+		//Text layouts
+		protected var textOverlays:TextOverlays
 
     	public function Effect()
 		{
 			//Stage setup
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			stage.align = StageAlign.TOP_LEFT;
+
+			//Get the text form loaderInfo
+		  	this.title = loaderInfo.parameters['title'] || "";
+		  	this.text = loaderInfo.parameters['text'] || "";
+
+			//Text
+			textOverlays = new TextOverlays();
+			textOverlays.width = BOOK_WIDTH;
+			textOverlays.scaleY = textOverlays.scaleX;
+			setTextLayout(loaderInfo.parameters['text_layout'] || 0);
+			setTextColor(loaderInfo.parameters['text_color'] || 0x0);
+
+			stage.addEventListener(Event.RESIZE, onResize);
 
 			//Load initial image
 			var l:Loader = new Loader()
@@ -53,15 +74,20 @@ package base
 					//Enabling customization
 					if(ExternalInterface.available){
 						ExternalInterface.addCallback("setAmount", setAmount);
-						ExternalInterface.addCallback("upload", upload)
+						ExternalInterface.addCallback("setTextLayout", setTextLayout);
+						ExternalInterface.addCallback("setTextColor", setTextColor);
+						ExternalInterface.addCallback("upload", upload);
 					} else
 						trace("No external interface available");
 				})
 			})
 			l.load(new URLRequest(loaderInfo.parameters['image'] || "testImage.jpg"));
-		  
-		  	//Get the text
-		  	this.text = loaderInfo.parameters['text'] || "";
+
+		}
+		protected function onResize(e:Event):void
+		{
+			if(_result)
+				addPageSizedChild(_result);
 		}
 
 		//Method to override
@@ -69,6 +95,40 @@ package base
 		{
 			callback();
 			return;
+		}
+
+		//Set text disposition
+		protected function setTextLayout(number:uint):void
+		{
+			textOverlays.gotoAndStop(number+1);
+			//try{
+			//	textOverlays.title.text = title;
+			//	textOverlays.text.text = text;
+			//} catch(e:Error) {
+			//	textOverlays.text.text = title + "\n\n" + text;
+			//}
+			updateTextColor();
+			
+		}
+		//Set text color
+		protected function setTextColor(c:uint):void
+		{
+			_textColor = c;
+			updateTextColor();
+		}
+		protected function updateTextColor():void
+		{
+			//Create a text format with the selected color
+			var fmt:TextFormat = new TextFormat;
+			fmt.color = _textColor;
+
+			for (var i:int = 0; i < textOverlays.numChildren; i++)
+			{
+				var tf:DisplayObject = textOverlays.getChildAt(i);
+				if(tf is TLFTextField){
+					(tf as TLFTextField).setTextFormat(fmt);
+				}
+			}
 		}
 
 		//Method to override
@@ -90,7 +150,7 @@ package base
 		//Send file to the server
 		protected function upload(url:String="/book_creator/save_image"):void
 		{
-			var encoder:JPEGEncoder = new JPEGEncoder(90);
+			var encoder:PNGEncoder = new PNGEncoder();
 			var data:ByteArray = encoder.encode(bitmapData(_result));
 
 			var hdr:URLRequestHeader = new URLRequestHeader("Content-type", "application/octet-stream");
@@ -127,14 +187,21 @@ package base
 				bookCanvas.graphics.drawRect(0, 0, BOOK_WIDTH, BOOK_HEIGHT);
 				bookCanvas.graphics.endFill();
 
-				//Make fit screen
-				bookCanvas.width = stage.stageWidth;
-				bookCanvas.scaleY = bookCanvas.scaleX;
+				////Make fit screen
+				//bookCanvas.width = stage.stageWidth;
+				//bookCanvas.scaleY = bookCanvas.scaleX;
 
 				//Add
 				super.addChild(bookCanvas);
 			}
-			return bookCanvas.addChild(o);
+
+			//Add to the content holder
+			bookCanvas.addChild(o)
+
+			//Keep text on top
+			bookCanvas.addChild(textOverlays);
+
+			return o;
 		}
 
 		/*
@@ -143,15 +210,34 @@ package base
 
 		protected function addPageSizedChild(target:DisplayObject):void
 		{
-			//Create a mask
-			var m:Shape = new Shape();
-			m.graphics.beginFill(0x0);
-			m.graphics.drawRect(0, 0, BOOK_WIDTH, BOOK_HEIGHT);
-			m.graphics.endFill();
-			addChild(m);
+			const MARGIN_BOTTOM:Number = 135;
+			var w:Number;
+			var h:Number;
+			var r:Number = stage.stageWidth/(stage.stageHeight-MARGIN_BOTTOM);
 
-			//Making fit
-			fitAndMask(target, m);
+			if(r > BOOK_WIDTH/BOOK_HEIGHT){
+				target.height = stage.stageHeight - MARGIN_BOTTOM;
+				target.scaleX = target.scaleY;
+				target.x = (stage.stageWidth-target.width)/2;
+				target.y = 0;
+			} else {
+				target.width = stage.stageWidth;
+				target.scaleY = target.scaleX;
+				target.x = 0;
+				target.y = (stage.stageHeight-MARGIN_BOTTOM-target.height)/2;
+			}
+
+			addChild(target);
+
+			////Create a mask
+			//var m:Shape = new Shape();
+			//m.graphics.beginFill(0x0);
+			//m.graphics.drawRect(0, 0, BOOK_WIDTH, BOOK_HEIGHT);
+			//m.graphics.endFill();
+			//addChild(m);
+
+			////Making fit
+			//fitAndMask(target, m);
 		}
 
 		// Saturation 0..1
@@ -182,6 +268,14 @@ package base
             	0, 0, 0, 1, 0  // alpha
             ];
             o.filters = o.filters.concat([new ColorMatrixFilter(m)]);
+		}
+
+		protected function luma(c:uint):uint
+		{
+            var r:uint = (( c >> 16 ) & 0xFF);
+            var g:uint = ( (c >> 8) & 0xFF );
+            var b:uint = ( c & 0xFF );
+            return (r + g + b) / 3;
 		}
 
 		protected function getInProportion(o:DisplayObject, width:int, height:int):Bitmap

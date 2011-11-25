@@ -18,8 +18,10 @@ window.setTextLayout = (id)->
 # Form submission flow
 window.submitPage = -> 
     $("#effect")[0].upload();
-window.onUploadComplete = ->
+window.uploadComplete = ->
     $("form").submit();
+window.uploadFailed = (msg)->
+    alert msg
 
 # Page setup
 setupFormInteraction = ->
@@ -81,7 +83,6 @@ setupFormInteraction = ->
         c = Math.floor(ui.value * textColors.length)
         c-- if c >= textColors.length
 
-        $("#colorInput").
         $("#effect")[0].setTextColor textColors[c]
         #Value we will send to server
         $("form .textColor").val(ui.value);
