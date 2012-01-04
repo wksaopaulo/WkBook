@@ -18,7 +18,10 @@ window.setTextLayout = (id)->
 # Form submission flow
 window.submitPage = -> 
     $("body").animate opacity: 0.3
-    $("#effect")[0].upload();
+    $("body").prepend "<h1 style='text-align:center'>Aguarde, enviando sua foto</h1>"
+    setTimeout ->
+      $("#effect")[0].upload();
+    , 500
 window.uploadComplete = ->
     $("body").animate opacity: 1
     window.location.href = "/book_creator/preview_text"
@@ -75,6 +78,19 @@ setupFormInteraction = ->
             clickEvent.stopPropagation();
         $('html').click ->
             $('#textPanel').css(display: 'none');
+
+    #Form validation
+    $('#createBook').bind "submit", ->
+      has_image = $("#w .userInput img").length == 1 || $("#w input[type=file]").val() != ""
+      has_text = $("#user_template_text").val() != "" || $("#user_template_title").val() != ""
+      unless has_image
+        alert "Clique em W para adicionar uma imagem"
+        return false
+      unless has_text
+        alert "Clique em K para adicionar um texto"
+        return false
+      return true
+        
 
     #Effect slider change stuff
     slideVal = if typeof(window.effectAmountValue) == 'undefined' then 0.5 else window.effectAmountValue
