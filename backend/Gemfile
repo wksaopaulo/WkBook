@@ -9,7 +9,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'mysql2'
 gem 'devise'
 gem 'carrierwave'
-#gem 'image_science'
+gem 'therubyracer'
 gem 'rmagick'
 
 # Gems used only for assets and not required
