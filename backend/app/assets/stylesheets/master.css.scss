@@ -23,6 +23,21 @@ p.notice {
   color: #333;
 }
 
+.bookImage {
+  float: left;
+  height: 100%;
+}
+.pageHolder {
+  height: 100%;
+}
+#homeLogin {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #000;
+  padding: 10px;
+}
+
 #loginPanel{
   width: 180px;
   margin: auto;

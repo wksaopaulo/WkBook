@@ -7,5 +7,8 @@
 //= require jquery
 //= require jquery
 //= require jquery_ujs
+//= jquery-ui-1.8.16.custom.min
+//= jquery.jscrollpane.min
+//= jquery.mousewheel
 //= require swfobject
 //= require_tree .

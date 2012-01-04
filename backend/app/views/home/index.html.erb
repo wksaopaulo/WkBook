@@ -1,9 +1,12 @@
+<div id="homeLogin">
 <%= link_to 'Login', controller: :book_creator %>
+</div>
+<div class="pageHolder">
 <%
 @users.each do |u| 
-  unless u.book_page.url.nil?
+  if u.has_page?
 %>
-  <%= image_tag u.book_page_url(:medium) %>
+  <%= image_tag u.image_url, :class => "bookImage" %>
 <%
   end
 end

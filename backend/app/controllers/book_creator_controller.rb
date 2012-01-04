@@ -1,5 +1,6 @@
 class BookCreatorController < ApplicationController
   before_filter :authenticate_user!
+  protect_from_forgery except: :save_image
 
   def index
     if current_user.template_picture.url.nil?
@@ -30,7 +31,16 @@ class BookCreatorController < ApplicationController
     @template ||= @templates.sample
   end
 
+  def preview_text
+    @image = current_user.image_url
+  end
+
   def save_image
-    
+    begin
+      current_user.update_image request.body.read
+      render :json => true
+    rescue
+      render :json => false
+    end
   end
 end

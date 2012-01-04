@@ -151,7 +151,9 @@ package base
 		protected function upload(url:String="/book_creator/save_image"):void
 		{
 			var encoder:PNGEncoder = new PNGEncoder();
-			var data:ByteArray = encoder.encode(bitmapData(_result));
+			var bmp:BitmapData = new BitmapData(BOOK_WIDTH, BOOK_HEIGHT, false, 0x0);
+			bmp.draw(_result)
+			var data:ByteArray = encoder.encode(bmp);
 
 			var hdr:URLRequestHeader = new URLRequestHeader("Content-type", "application/octet-stream");
 			var req:URLRequest = new URLRequest(url);

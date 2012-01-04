@@ -16,7 +16,7 @@ package dupin.display{
 
 		//Default bitmap with all content
 		var m:Matrix = matrix || new Matrix(); //Default matrix with no transformation
-		var b:BitmapData = new BitmapData(Math.max(o.width, 1), Math.max(o.height,1), true, 0x0);
+		var b:BitmapData = new BitmapData(Math.max(o.width*o.scaleX, 1), Math.max(o.height*o.scaleY,1), true, 0x0);
 
 		if(colorBounds){
 			b.draw(o);

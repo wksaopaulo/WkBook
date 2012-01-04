@@ -17,10 +17,13 @@ window.setTextLayout = (id)->
 
 # Form submission flow
 window.submitPage = -> 
+    $("body").animate opacity: 0.3
     $("#effect")[0].upload();
 window.uploadComplete = ->
-    $("form").submit();
+    $("body").animate opacity: 1
+    window.location.href = "/book_creator/preview_text"
 window.uploadFailed = (msg)->
+    $("body").animate opacity: 1
     alert msg
 
 # Page setup
@@ -36,6 +39,9 @@ setupFormInteraction = ->
     , ->
         $("#w .userInput img").hide();
         $("#w input:file").css {top: 0, left: 0}
+
+    # Scroll
+    $("#templates").jScrollPane()
 
     # Select file on click
     $('#w').mousemove (e)-> 
