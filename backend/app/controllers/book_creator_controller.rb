@@ -33,6 +33,17 @@ class BookCreatorController < ApplicationController
 
   def preview_text
     @image = current_user.image_url
+    @thumb = current_user.thumb_url
+
+    #Text templates
+    text_size = 0
+    text_size += current_user.template_title.split(" ").size rescue 0
+    text_size += current_user.template_text.split(" ").size rescue 0
+    puts "text_size is #{text_size}"
+    @templates = TextTemplate.find :all, :conditions => ["? > min_text and ? < max_text", text_size, text_size]
+    #Did the user already select one?
+    @template = @templates.first
+    @template = current_user.text_template unless current_user.text_template.nil?
   end
 
   def save_image
@@ -42,5 +53,12 @@ class BookCreatorController < ApplicationController
     rescue
       render :json => false
     end
+  end
+
+  def save_text_template
+    current_user.text_template_id = params['id']
+    current_user.save
+
+    redirect_to "/"
   end
 end

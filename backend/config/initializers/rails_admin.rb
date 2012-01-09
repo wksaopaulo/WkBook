@@ -6,6 +6,15 @@
 #          888  `88b.  d8(  888   888   888  o.  )88b  .8'     `888.  888   888   888   888   888   888   888   888
 #         o888o  o888o `Y888""8o o888o o888o 8""888P' o88o     o8888o `Y8bod88P" o888o o888o o888o o888o o888o o888o
 
+#Fucking bug
+require "rails_admin/abstract_history"
+module RailsAdmin
+  class AbstractHistory
+    def self.create_history_item(message, object, abstract_model, user) ; end
+  end
+end
+
+
 # Register a custom field factory and field type for CarrierWave if its defined
 if defined?(::CarrierWave)
   module RailsAdmin::Config::Fields::Types

@@ -1,1 +1,22 @@
-<%= image_tag @image %>
+<div id="textPreview">
+  <%= image_tag @image + "?r=#{rand}", :id => "image" %>
+  <%= image_tag @template.picture_url, :id => "textTemplate" %>
+</div>
+<div id="effectControls">
+  <div class="topControls">
+    <input type="button" value="Salvar" class="submit" onclick="submitTextPage(); return false;">
+  </div>
+  <div id="templates">
+    <table>
+      <tr>
+  <% @templates.each do |template| 
+        is_current = @template.id == template.id ? 'selected' : ''
+      %>
+      <td><a href="#">
+          <%= image_tag @thumb, :class => 'thumb' %>
+          <%= image_tag(template.picture_url + "?r=#{rand}", :class => "#{is_current} preview", 'data-id' => template.id, 'data-url' => template.picture_url )%></a></td>
+  <% end %>
+      </tr>
+    </table>
+  </div>
+</div>

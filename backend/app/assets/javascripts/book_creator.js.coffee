@@ -22,6 +22,8 @@ window.submitPage = ->
     setTimeout ->
       $("#effect")[0].upload();
     , 500
+window.submitTextPage = ->
+    window.location.href = "/book_creator/save_text_template?id=#{ $("#templates img.preview.selected").attr('data-id') }"
 window.uploadComplete = ->
     $("body").animate opacity: 1
     window.location.href = "/book_creator/preview_text"
@@ -108,5 +110,20 @@ setupFormInteraction = ->
         $("#effect")[0].setTextColor textColors[c]
         #Value we will send to server
         $("form .textColor").val(ui.value);
+
+    #Text page resize and interaction
+    if $("#textPreview").length > 0
+      resize = ->
+        t_height = $(document).height() - 150
+        $("#textPreview").height(t_height)
+        $("#textPreview").css(marginLeft: $(document).width()/2 - t_height*1.5/2)
+      $(window).resize resize
+      resize();
+
+      $("#templates a").click ->
+        $("#textTemplate").attr "src", $(this).find(".preview").attr("data-url")
+        $("#templates a img").removeClass "selected"
+        $(this).find("img").addClass "selected"
+
 
 $(document).ready setupFormInteraction

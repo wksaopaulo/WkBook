@@ -23,10 +23,13 @@ p.notice {
   color: #333;
 }
 
-.bookImage {
+.page {
   float: left;
   height: 100%;
+  position: relative;
 }
+.bookImage { height: 100% }
+.bookTextTemplate { height: 100%; position: absolute; }
 .pageHolder {
   height: 100%;
 }

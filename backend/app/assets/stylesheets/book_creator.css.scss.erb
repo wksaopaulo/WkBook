@@ -99,6 +99,17 @@
 
 }
 
+#textPreview {
+  height: 70%;
+  position: relative;
+
+  img {
+    height:100%;
+    position: absolute;
+    left: 0;
+  }
+}
+
 
 /* PREVIEW */
 #effectControls {
@@ -132,6 +143,7 @@
   
     $buttonWidth: 50px;
     width: 95%;
+    min-height: 10px;
     margin: 10px auto;
     padding-right: $buttonWidth+5px;
     position: relative;
@@ -160,15 +172,22 @@
     margin: 10px auto;
   }
 
-  $thumbWidth: 80px;
+  $thumbHeight: 80px;
+
+  td{ position: relative; }
+  .preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
   img {
     /*box-shadow: 5px 5px 5px #ccc;*/
-    width: $thumbWidth;
+    height: $thumbHeight;
     margin: 5px;
   }
 
   img.selected {
     border: 2px solid #fff;
-    width: $thumbWidth - 4;
+    height: $thumbHeight - 4;
   }
 }

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111104114315) do
+ActiveRecord::Schema.define(:version => 20120109142230) do
 
   create_table "book_admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -53,6 +53,14 @@ ActiveRecord::Schema.define(:version => 20111104114315) do
     t.integer  "text_id"
   end
 
+  create_table "text_templates", :force => true do |t|
+    t.string   "picture"
+    t.integer  "min_text"
+    t.integer  "max_text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "",  :null => false
     t.string   "encrypted_password",     :limit => 128, :default => "",  :null => false
@@ -73,8 +81,7 @@ ActiveRecord::Schema.define(:version => 20111104114315) do
     t.string   "book_page"
     t.float    "effect_amount",                         :default => 0.0, :null => false
     t.string   "template_title"
-    t.integer  "template_text_id",                      :default => 0
-    t.integer  "template_text_color"
+    t.integer  "text_template_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

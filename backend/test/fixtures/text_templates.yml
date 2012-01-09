@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  picture: MyString
+  min_text: 1
+  max_text: 1
+
+two:
+  picture: MyString
+  min_text: 1
+  max_text: 1

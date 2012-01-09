@@ -4,9 +4,12 @@
 <div class="pageHolder">
 <%
 @users.each do |u| 
-  if u.has_page?
+  if u.has_page? and not u.text_template.nil?
 %>
-  <%= image_tag u.image_url, :class => "bookImage" %>
+  <div class="page">
+    <%= image_tag u.text_template.picture_url, :class => "bookTextTemplate" %>
+    <%= image_tag u.image_url, :class => "bookImage" %>
+  </div>
 <%
   end
 end
