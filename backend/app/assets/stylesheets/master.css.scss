@@ -24,9 +24,8 @@ p.notice {
 }
 
 .page {
-  float: left;
   height: 100%;
-  position: relative;
+  position: absolute;
 }
 .bookImage { height: 100% }
 .bookTextTemplate { height: 100%; position: absolute; }

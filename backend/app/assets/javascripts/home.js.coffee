@@ -4,9 +4,11 @@
 
 $ ->
   doResize= ->
+    console.log "resize"
     w=0
-    $('.pageHolder img').each (idx, it)-> w += $(it).width()
+    $('.pageHolder .page').each (idx, it)-> 
+      $(it).css left: "#{w}px"
+      w += $(it).find('.bookImage').width() + 5
     $('.pageHolder').width(w)
 
-  doResize();
-  $(window).resize(doResize)
+  $(".pageHolder img").imagesLoaded null, doResize

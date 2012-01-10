@@ -11,4 +11,5 @@
 //= jquery.jscrollpane.min
 //= jquery.mousewheel
 //= require swfobject
+//= require imgload
 //= require_tree .
