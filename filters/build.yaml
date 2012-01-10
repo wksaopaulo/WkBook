@@ -12,8 +12,8 @@ source-path:
     - source/libs
     
 applications:
-    - class: source/classes/effects/Effect0.as
-      output: public/Effect0.swf
+    # - class: source/classes/effects/Effect0.as
+    #   output: public/Effect0.swf
     # - class: source/classes/effects/Effect1.as
     #   output: public/Effect1.swf
     # - class: source/classes/effects/Effect2.as
@@ -26,8 +26,8 @@ applications:
     #   output: public/Effect5.swf
     # - class: source/classes/effects/Effect6.as
     #   output: public/Effect6.swf
-    # - class: source/classes/effects/Effect7.as
-    #   output: public/Effect7.swf
+    - class: source/classes/effects/Effect7.as
+      output: public/Effect7.swf
     # - class: source/classes/effects/Effect9.as
     #   output: public/Effect9.swf
     # - class: source/classes/effects/Effect10.as
@@ -48,8 +48,8 @@ applications:
     #   output: public/Effect17.swf
     # - class: source/classes/effects/Effect18.as
     #   output: public/Effect18.swf
-    # - class: source/classes/effects/Effect19.as
-    #   output: public/Effect19.swf      
+    - class: source/classes/effects/Effect19.as
+      output: public/Effect19.swf      
     # - class: source/classes/effects/Effect20.as
     #   output: public/Effect20.swf
     # - class: source/classes/effects/Effect21.as

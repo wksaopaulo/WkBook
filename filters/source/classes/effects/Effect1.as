@@ -12,7 +12,7 @@ package effects
 	import flash.net.*;
 	import base.Effect;
 
-	[SWF(width='1024', height='768', backgroundColor='#FFFFFF', frameRate='60')]
+	[SWF(width='1024', height='768', backgroundColor='#000000', frameRate='60')]
 	public class Effect1 extends Effect
 	{
 		protected var effect1Displace:Bitmap;

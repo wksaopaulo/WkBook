@@ -1,5 +1,6 @@
 package base
 {
+	import flash.geom.Rectangle;
 	import mx.graphics.codec.PNGEncoder;
 	import fl.text.*;
 	import flash.text.*;
@@ -152,7 +153,8 @@ package base
 		{
 			var encoder:PNGEncoder = new PNGEncoder();
 			var bmp:BitmapData = new BitmapData(BOOK_WIDTH, BOOK_HEIGHT, false, 0x0);
-			bmp.draw(_result)
+			bmp.fillRect(new Rectangle(0, 0, BOOK_WIDTH, BOOK_HEIGHT), 0xff000000);
+			bmp.draw(_result);
 			var data:ByteArray = encoder.encode(bmp);
 
 			var hdr:URLRequestHeader = new URLRequestHeader("Content-type", "application/octet-stream");

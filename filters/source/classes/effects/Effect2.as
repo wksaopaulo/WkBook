@@ -15,7 +15,7 @@ package effects
 	import flash.net.*;
 	import base.Effect;
 
-	[SWF(width='1024', height='768', backgroundColor='#FFFFFF', frameRate='60')]
+	[SWF(width='1024', height='768', backgroundColor='#000000', frameRate='60')]
 	public class Effect2 extends Effect
 	{	
         private const PIXEL_WIDTH:int = 30;
