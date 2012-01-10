@@ -28,7 +28,7 @@ class BookCreatorController < ApplicationController
     end
    
     # Pick a random one...
-    @template ||= @templates.sample
+    @template ||= @templates.first
   end
 
   def preview_text
