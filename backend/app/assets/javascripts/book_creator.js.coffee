@@ -80,8 +80,18 @@ setupFormInteraction = ->
         # Make it hide when needed
         $('#textPanel').click (clickEvent)->
             clickEvent.stopPropagation();
-        $('html').click ->
+        $('html, #textPanel .close').click ->
             $('#textPanel').css(display: 'none');
+
+    $("#textPanel textarea, #textPanel input[type=text]").bind "keyup click blur focus change paste", ->
+
+      $("#textPanel textarea").val($("#textPanel textarea").val().substring(0, 900)) if $("#textPanel textarea").val().length > 900
+
+      wc = titleCount = $("#textPanel textarea").val().length
+
+      # More words then allowed
+      maxChars = 900 #See book_creator_controller.rb, around line 42 (title: 100chars / text: 900chars)
+      $(".remainingWords").html("#{maxChars - wc} characters remaining")
 
     #Form validation
     $('#createBook').bind "submit", ->

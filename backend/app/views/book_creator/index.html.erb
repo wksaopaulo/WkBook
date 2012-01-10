@@ -30,8 +30,10 @@
 
   <div id="textPanel">
     <%= f.label :template_text, "Conte a sua história" %>
-    <%= f.text_field :template_title, placeholder: "Your history title..." %>
+    <%= f.text_field :template_title, placeholder: "Your history title...", maxlength: 100 %>
     <%= f.text_area :template_text, placeholder: "Lorem ipsum dolor sit amet..." %>
+    <input type="button" value="OK" class="close">
+    <span class="remainingWords"></span>
   </div>
 
 <% end %>
