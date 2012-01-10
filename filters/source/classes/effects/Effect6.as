@@ -29,7 +29,9 @@ package effects
 
             //Do it
             var bmp:Bitmap = getThin(resizedImage, s);
-            bmp.transform.colorTransform = new ColorTransform(1.2, 1.1, 0.8);
+            bmp.bitmapData.colorTransform(bmp.bitmapData.rect, new ColorTransform(1.2, 1.1, 0.8));
+
+            bmp = getInProportion(bmp, BOOK_WIDTH, BOOK_HEIGHT);
             
             return bmp;
     	}

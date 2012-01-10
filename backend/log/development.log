@@ -76039,3 +76039,2211 @@ Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Mod
 
 Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 14:59:13 -0200
 Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:00:09 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 1048ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTextTemplate Load (0.2ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)
+  [1m[36mTextTemplate Load (0.1ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 17 LIMIT 1[0m
+Rendered book_creator/preview_text.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 111ms (Views: 62.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:00:10 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:02:04 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 1045ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTextTemplate Load (0.2ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)
+  [1m[36mTextTemplate Load (0.1ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 17 LIMIT 1[0m
+Rendered book_creator/preview_text.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 75ms (Views: 25.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:02:05 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTextTemplate Load (0.2ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)[0m
+  [1m[35mTextTemplate Load (0.1ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 17 LIMIT 1
+Rendered book_creator/preview_text.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 98ms (Views: 23.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:02:43 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:02:44 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=6" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mTemplate Load (0.3ms)[0m  [1mSELECT "templates".* FROM "templates" ORDER BY created_at[0m
+Rendered book_creator/preview.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 107ms (Views: 59.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:02:47 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=6" for 127.0.0.1 at 2012-01-10 15:02:49 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTemplate Load (0.1ms)[0m  [1mSELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mTemplate Load (0.3ms)[0m  SELECT "templates".* FROM "templates" ORDER BY created_at
+Rendered book_creator/preview.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 105ms (Views: 24.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:02:50 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" for 127.0.0.1 at 2012-01-10 15:02:53 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" for 127.0.0.1 at 2012-01-10 15:02:53 -0200
+Served asset /ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:03:35 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 1125ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTextTemplate Load (0.2ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)[0m
+  [1m[35mTextTemplate Load (0.1ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 17 LIMIT 1
+Rendered book_creator/preview_text.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 109ms (Views: 25.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:03:37 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=8" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mTemplate Load (0.3ms)[0m  [1mSELECT "templates".* FROM "templates" ORDER BY created_at[0m
+Rendered book_creator/preview.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 73ms (Views: 25.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:03:57 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:04:09 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 1080ms (Views: 6.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTextTemplate Load (0.2ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)
+  [1m[36mTextTemplate Load (0.1ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 17 LIMIT 1[0m
+Rendered book_creator/preview_text.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 109ms (Views: 24.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:04:10 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=8" for 127.0.0.1 at 2012-01-10 15:05:44 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"8"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTemplate Load (0.1ms)[0m  [1mSELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mTemplate Load (0.3ms)[0m  SELECT "templates".* FROM "templates" ORDER BY created_at
+Rendered book_creator/preview.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 74ms (Views: 25.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:44 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:44 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:44 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:44 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:44 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:44 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:44 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:05:45 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:05:45 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:05:45 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:05:54 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 1088ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:05:55 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTextTemplate Load (0.2ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)[0m
+  [1m[35mTextTemplate Load (0.1ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 17 LIMIT 1
+Rendered book_creator/preview_text.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 75ms (Views: 26.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:05:56 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=8" for 127.0.0.1 at 2012-01-10 15:08:26 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mTemplate Load (0.4ms)[0m  [1mSELECT "templates".* FROM "templates" ORDER BY created_at[0m
+Rendered book_creator/preview.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 107ms (Views: 58.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:26 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:26 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:26 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:26 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:26 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:26 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:26 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:08:27 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:08:27 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:08:27 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=8" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"8"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTemplate Load (0.1ms)[0m  [1mSELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mTemplate Load (0.3ms)[0m  SELECT "templates".* FROM "templates" ORDER BY created_at
+Rendered book_creator/preview.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 107ms (Views: 25.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:08:29 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=8" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mTemplate Load (0.3ms)[0m  [1mSELECT "templates".* FROM "templates" ORDER BY created_at[0m
+Rendered book_creator/preview.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 75ms (Views: 25.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:10:17 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:10:29 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 1088ms (Views: 5.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTextTemplate Load (0.2ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)
+  [1m[36mTextTemplate Load (0.1ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 17 LIMIT 1[0m
+Rendered book_creator/preview_text.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 73ms (Views: 24.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:30 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:31 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:31 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:31 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:31 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:31 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:31 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:10:31 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:10:31 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/save_text_template?id=12" for 127.0.0.1 at 2012-01-10 15:11:05 -0200
+  Processing by BookCreatorController#save_text_template as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "text_template_id" = 12, "updated_at" = '2012-01-10 17:11:06.027618' WHERE "users"."id" = 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 34ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY name
+  [1m[36mTextTemplate Load (0.1ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 12 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 56ms (Views: 37.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:06 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+  Processing by BookCreatorController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered book_creator/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 9.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder1.jpg" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /type_placeholder1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/plus.png" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /plus.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/k.jpg" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /k.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder2.jpg" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /type_placeholder2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder3.jpg" for 127.0.0.1 at 2012-01-10 15:11:11 -0200
+Served asset /type_placeholder3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/w.jpg" for 127.0.0.1 at 2012-01-10 15:11:12 -0200
+Served asset /w.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder4.jpg" for 127.0.0.1 at 2012-01-10 15:11:12 -0200
+Served asset /type_placeholder4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/type_placeholder5.jpg" for 127.0.0.1 at 2012-01-10 15:11:12 -0200
+Served asset /type_placeholder5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ok.png" for 127.0.0.1 at 2012-01-10 15:11:12 -0200
+Served asset /ok.png - 304 Not Modified (0ms)
+
+
+Started PUT "/book_creator/preview" for 127.0.0.1 at 2012-01-10 15:11:13 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZPPBoNv2KP1zVGOBx/j44TunOMvbPPYu4B9kAIFYgkM=", "user"=>{"template_picture_cache"=>"", "template_title"=>"Tit", "template_text"=>"Bacon ipsum dolor sit amet tri-tip bresaola bacon sirloin pork belly beef venison, brisket pork frankfurter. Tongue ground round chicken, sirloin meatball fatback pastrami ham bresaola venison ribeye. Pig chicken jerky drumstick andouille, hamburger ground round sausage flank fatback salami turducken pork. Shank short ribs strip steak t-bone, tail spare ribs jowl shankle venison rump leberkäse. Swine cow prosciutto chuck, brisket short ribs salami bacon tail meatloaf rump ham boudin sausage. Biltong meatball shank tongue, tri-tip cow chicken sausage bacon ribeye brisket capicola pastrami shoulder tail. Drumstick flank filet mignon, chuck sausage pork cow tail salami corned beef.\r\n\r\nProsciutto salami kielbasa, bacon shankle cow tenderloin pork belly jowl venison spare ribs sausage meatball. Pork loin pork turkey t-bone filet mignon, beef tail rump biltong boudin. Bresaola cow shankle, bacon t-bone jowl beef ribs pancetta prosciutto tenderloin. Meatloaf fatback shankle, tail filet mignon capicola shank brisket corned beef drumstick strip steak ball tip turducken. Ham drumstick andouille flank capicola pig, turkey tail filet mignon short loin kielbasa ball tip pork loin jowl. Pig turducken meatloaf, chuck pork loin ham shank biltong ham hock rump brisket sausage fatback meatball. Prosciutto ham hock ground round, tail hamburger chuck jerky spare ribs sausage shoulder pork loin.\r\n\r\nSirloin ham hock tongue bacon, leberkäse chicken ground round pastrami capicola pancetta drumstick tail jowl pork belly. Biltong swine short loin, cow strip steak prosciutto turducken meatloaf flank shankle leberkäse jowl. Fatback cow drumstick, turducken ball tip venison pig. Capicola chicken biltong ribeye. Filet mignon bresaola pastrami sirloin. Ham venison corned beef, spare ribs ball tip cow andouille capicola pork chop leberkäse filet mignon prosciutto frankfurter ground round turkey. Turkey strip steak shoulder, bacon capicola pork chop shank filet mignon bresaola tongue prosciutto jerky."}, "commit.x"=>"15", "commit.y"=>"13", "commit"=>"Update User"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "template_picture" = 'testImage_.jpg', "updated_at" = '2012-01-10 17:11:13.887068' WHERE "users"."id" = 1[0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" WHERE "templates"."id" IS NULL LIMIT 1
+  [1m[36mTemplate Load (0.2ms)[0m  [1mSELECT "templates".* FROM "templates" ORDER BY created_at LIMIT 1[0m
+  [1m[35mTemplate Load (0.3ms)[0m  SELECT "templates".* FROM "templates" ORDER BY created_at
+Rendered book_creator/preview.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 78ms (Views: 23.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:13 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:13 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:11:14 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=14" for 127.0.0.1 at 2012-01-10 15:11:25 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mTemplate Load (0.3ms)[0m  [1mSELECT "templates".* FROM "templates" ORDER BY created_at[0m
+Rendered book_creator/preview.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 104ms (Views: 25.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:11:26 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=14" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTemplate Load (0.1ms)[0m  [1mSELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35mTemplate Load (0.3ms)[0m  SELECT "templates".* FROM "templates" ORDER BY created_at
+Rendered book_creator/preview.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 106ms (Views: 25.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:12:03 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:12:12 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 937ms (Views: 6.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTextTemplate Load (0.2ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)[0m
+  [1m[35mTextTemplate Load (0.1ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 12 LIMIT 1
+Rendered book_creator/preview_text.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 109ms (Views: 24.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:13 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:14 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:14 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:14 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:12:14 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:12:14 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=14" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mTemplate Load (0.3ms)[0m  [1mSELECT "templates".* FROM "templates" ORDER BY created_at[0m
+Rendered book_creator/preview.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 73ms (Views: 25.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:13:08 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:13:17 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 1422ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:13:18 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTextTemplate Load (0.2ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)
+  [1m[36mTextTemplate Load (0.1ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 12 LIMIT 1[0m
+Rendered book_creator/preview_text.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 76ms (Views: 24.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:13:19 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=17" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"17"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTemplate Load (0.1ms)[0m  [1mSELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mTemplate Load (0.3ms)[0m  SELECT "templates".* FROM "templates" ORDER BY created_at
+Rendered book_creator/preview.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 106ms (Views: 58.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:48 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:13:49 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:13:49 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:13:49 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=16" for 127.0.0.1 at 2012-01-10 15:13:49 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"16"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1  [["id", "16"]]
+  [1m[36mTemplate Load (0.3ms)[0m  [1mSELECT "templates".* FROM "templates" ORDER BY created_at[0m
+Rendered book_creator/preview.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 116ms (Views: 28.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:13:50 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/preview?template=16" for 127.0.0.1 at 2012-01-10 15:15:00 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"template"=>"16"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTemplate Load (0.1ms)[0m  [1mSELECT "templates".* FROM "templates" WHERE "templates"."id" = ? LIMIT 1[0m  [["id", "16"]]
+  [1m[35mTemplate Load (0.3ms)[0m  SELECT "templates".* FROM "templates" ORDER BY created_at
+Rendered book_creator/preview.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 74ms (Views: 25.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 15:15:01 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 304 Not Modified (0ms)
+
+
+Started POST "/book_creator/save_image" for 127.0.0.1 at 2012-01-10 15:15:11 -0200
+  Processing by BookCreatorController#save_image as */*
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 1042ms (Views: 6.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/book_creator/preview_text" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+  Processing by BookCreatorController#preview_text as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTextTemplate Load (0.2ms)[0m  [1mSELECT "text_templates".* FROM "text_templates" WHERE (287 >= min_text and 287 <= max_text)[0m
+  [1m[35mTextTemplate Load (0.1ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 12 LIMIT 1
+Rendered book_creator/preview_text.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 109ms (Views: 24.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:12 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 15:15:13 -0200
+Served asset /black_80.png - 304 Not Modified (0ms)
+
+
+Started GET "/book_creator/save_text_template?id=16" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+  Processing by BookCreatorController#save_text_template as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  UPDATE "users" SET "text_template_id" = 16, "updated_at" = '2012-01-10 17:15:54.837910' WHERE "users"."id" = 1
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 36ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  [1m[35mTextTemplate Load (0.1ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 16 LIMIT 1
+Rendered home/index.html.erb within layouts/application (65.6ms)
+Completed 200 OK in 90ms (Views: 71.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /book_creator.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /master.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:54 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:55 -0200
+Served asset /swfobject.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:55 -0200
+Served asset /book_creator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:55 -0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:55 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:55 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:55 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 15:15:55 -0200
+Served asset /application.js - 304 Not Modified (0ms)

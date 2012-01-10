@@ -52,6 +52,8 @@ package effects
             //Saturation
             saturate(0.3, resizedImage);
 
+            resizedImage = getInProportion(resizedImage, BOOK_WIDTH, BOOK_HEIGHT);
+
             return resizedImage;
     	}
 

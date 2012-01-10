@@ -42,7 +42,7 @@ package effects
 
           var bigImg:Bitmap = getInProportion(displacedBmp, BOOK_WIDTH, BOOK_HEIGHT);
           
-          return displacedBmp;
+          return bigImg;
     	}
     }
 } 
