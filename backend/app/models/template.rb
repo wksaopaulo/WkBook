@@ -1,5 +1,5 @@
 class Template < ActiveRecord::Base
-  has_one :user
+  has_many :users
 
   mount_uploader :preview, TemplatePreviewUploader
   mount_uploader :effect_file, EffectFileUploader

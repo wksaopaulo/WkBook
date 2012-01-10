@@ -63418,3 +63418,256 @@ Served asset /jquery.mousewheel.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-09 16:18:54 -0200
 Served asset /application.js - 304 Not Modified (1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTemplates (20111019115316)
+Migrating to DeviseCreateUsers (20111019115919)
+Migrating to CreateRailsAdminHistoriesTable (20111019140422)
+Migrating to DeviseCreateBookAdmins (20111019140823)
+Migrating to AddEffectFileToTemplates (20111027131030)
+Migrating to AddBookPageToUser (20111031125441)
+Migrating to AddEffectAmountToUser (20111031140533)
+Migrating to AddTemplateTitleToUser (20111103162056)
+Migrating to AddTextColorToUser (20111103174630)
+Migrating to AddTextIdToTemplates (20111104114315)
+Migrating to CreateTextTemplates (20120109135254)
+Migrating to AddTextTemplateIdToUsers (20120109135328)
+Migrating to RemoveUnusedFields (20120109142116)
+Migrating to RemoveTextFromTemplates (20120109142230)
+Migrating to AddTemplateIdToUsers (20120110131215)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "template_id" integer[0m
+SQLite3::SQLException: duplicate column name: template_id: ALTER TABLE "users" ADD "template_id" integer
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 11:46:49 -0200
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  [1m[35mTextTemplate Load (0.3ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."user_id" = 1 LIMIT 1
+SQLite3::SQLException: no such column: text_templates.user_id: SELECT  "text_templates".* FROM "text_templates"  WHERE "text_templates"."user_id" = 1 LIMIT 1
+Rendered home/index.html.erb within layouts/application (158.1ms)
+Completed 500 Internal Server Error in 217ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: text_templates.user_id: SELECT  "text_templates".* FROM "text_templates"  WHERE "text_templates"."user_id" = 1 LIMIT 1):
+    4: <div class="pageHolder">
+    5: <%
+    6: @users.each do |u| 
+    7:   if u.has_page? and not u.text_template.nil?
+    8: %>
+    9:   <div class="page">
+    10:     <%= image_tag u.text_template.picture_url, :class => "bookTextTemplate" %>
+  app/views/home/index.html.erb:7:in `block in _app_views_home_index_html_erb__244323950784913985_2152680680'
+  app/views/home/index.html.erb:6:in `each'
+  app/views/home/index.html.erb:6:in `_app_views_home_index_html_erb__244323950784913985_2152680680'
+
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 11:47:33 -0200
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  [1m[35mTextTemplate Load (0.2ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."user_id" = 1 LIMIT 1
+SQLite3::SQLException: no such column: text_templates.user_id: SELECT  "text_templates".* FROM "text_templates"  WHERE "text_templates"."user_id" = 1 LIMIT 1
+Rendered home/index.html.erb within layouts/application (26.2ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: text_templates.user_id: SELECT  "text_templates".* FROM "text_templates"  WHERE "text_templates"."user_id" = 1 LIMIT 1):
+    4: <div class="pageHolder">
+    5: <%
+    6: @users.each do |u| 
+    7:   if u.has_page? and not u.text_template.nil?
+    8: %>
+    9:   <div class="page">
+    10:     <%= image_tag u.text_template.picture_url, :class => "bookTextTemplate" %>
+  app/views/home/index.html.erb:7:in `block in _app_views_home_index_html_erb__244323950784913985_2152680680'
+  app/views/home/index.html.erb:6:in `each'
+  app/views/home/index.html.erb:6:in `_app_views_home_index_html_erb__244323950784913985_2152680680'
+
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-10 11:48:11 -0200
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY name[0m
+  [1m[35mTextTemplate Load (0.1ms)[0m  SELECT "text_templates".* FROM "text_templates" WHERE "text_templates"."id" = 17 LIMIT 1
+Rendered home/index.html.erb within layouts/application (118.1ms)
+Completed 200 OK in 330ms (Views: 311.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /book_creator.css - 200 OK (24ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /colorpicker.css - 200 OK (19ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /jquery.jscrollpane.css - 200 OK (14ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 200 OK (16ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /book_creator.js - 200 OK (21ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /swfobject.js - 200 OK (24ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /home.js - 200 OK (22ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /jquery.jscrollpane.min.js - 200 OK (12ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /jquery.mousewheel.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /master.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /home.css - 200 OK (36ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:12 -0200
+Served asset /application.js - 200 OK (15ms)
+
+
+Started GET "/book_creator" for 127.0.0.1 at 2012-01-10 11:48:17 -0200
+  Processing by BookCreatorController#index as HTML
+Completed   in 35ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-01-10 11:48:17 -0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.1ms)
+Rendered devise/sessions/new.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 128ms (Views: 74.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:17 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:17 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZPPBoNv2KP1zVGOBx/j44TunOMvbPPYu4B9kAIFYgkM=", "user"=>{"email"=>"lucas.dupin@wk.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'lucas.dupin@wk.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2012-01-09 14:28:40.046952', "current_sign_in_at" = '2012-01-10 13:48:20.392686', "sign_in_count" = 19, "updated_at" = '2012-01-10 13:48:20.393961' WHERE "users"."id" = 1
+Redirected to http://0.0.0.0:3000/book_creator
+Completed 302 Found in 251ms
+
+
+Started GET "/book_creator" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+  Processing by BookCreatorController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered book_creator/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 80ms (Views: 24.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/w.jpg" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /w.jpg - 200 OK (8ms)
+
+
+Started GET "/assets/plus.png" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /plus.png - 200 OK (16ms)
+
+
+Started GET "/assets/k.jpg" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /k.jpg - 200 OK (41ms)
+
+
+Started GET "/assets/type_placeholder1.jpg" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /type_placeholder1.jpg - 200 OK (27ms)
+
+
+Started GET "/assets/type_placeholder2.jpg" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /type_placeholder2.jpg - 200 OK (1ms)
+
+
+Started GET "/assets/type_placeholder3.jpg" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /type_placeholder3.jpg - 200 OK (1ms)
+
+
+Started GET "/assets/type_placeholder4.jpg" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /type_placeholder4.jpg - 200 OK (1ms)
+
+
+Started GET "/assets/type_placeholder5.jpg" for 127.0.0.1 at 2012-01-10 11:48:20 -0200
+Served asset /type_placeholder5.jpg - 200 OK (39ms)
+
+
+Started GET "/assets/ok.png" for 127.0.0.1 at 2012-01-10 11:48:21 -0200
+Served asset /ok.png - 200 OK (26ms)
+
+
+Started PUT "/book_creator/preview" for 127.0.0.1 at 2012-01-10 11:48:25 -0200
+  Processing by BookCreatorController#preview as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZPPBoNv2KP1zVGOBx/j44TunOMvbPPYu4B9kAIFYgkM=", "user"=>{"template_picture_cache"=>"", "template_title"=>"Tit", "template_text"=>"Bacon ipsum dolor sit amet tri-tip bresaola bacon sirloin pork belly beef venison, brisket pork frankfurter. Tongue ground round chicken, sirloin meatball fatback pastrami ham bresaola venison ribeye. Pig chicken jerky drumstick andouille, hamburger ground round sausage flank fatback salami turducken pork. Shank short ribs strip steak t-bone, tail spare ribs jowl shankle venison rump leberkäse. Swine cow prosciutto chuck, brisket short ribs salami bacon tail meatloaf rump ham boudin sausage. Biltong meatball shank tongue, tri-tip cow chicken sausage bacon ribeye brisket capicola pastrami shoulder tail. Drumstick flank filet mignon, chuck sausage pork cow tail salami corned beef.\r\n\r\nProsciutto salami kielbasa, bacon shankle cow tenderloin pork belly jowl venison spare ribs sausage meatball. Pork loin pork turkey t-bone filet mignon, beef tail rump biltong boudin. Bresaola cow shankle, bacon t-bone jowl beef ribs pancetta prosciutto tenderloin. Meatloaf fatback shankle, tail filet mignon capicola shank brisket corned beef drumstick strip steak ball tip turducken. Ham drumstick andouille flank capicola pig, turkey tail filet mignon short loin kielbasa ball tip pork loin jowl. Pig turducken meatloaf, chuck pork loin ham shank biltong ham hock rump brisket sausage fatback meatball. Prosciutto ham hock ground round, tail hamburger chuck jerky spare ribs sausage shoulder pork loin.\r\n\r\nSirloin ham hock tongue bacon, leberkäse chicken ground round pastrami capicola pancetta drumstick tail jowl pork belly. Biltong swine short loin, cow strip steak prosciutto turducken meatloaf flank shankle leberkäse jowl. Fatback cow drumstick, turducken ball tip venison pig. Capicola chicken biltong ribeye. Filet mignon bresaola pastrami sirloin. Ham venison corned beef, spare ribs ball tip cow andouille capicola pork chop leberkäse filet mignon prosciutto frankfurter ground round turkey. Turkey strip steak shoulder, bacon capicola pork chop shank filet mignon bresaola tongue prosciutto jerky."}, "commit.x"=>"20", "commit.y"=>"27", "commit"=>"Update User"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "template_picture" = 'testImage_.jpg', "updated_at" = '2012-01-10 13:48:25.084598' WHERE "users"."id" = 1
+  [1m[36mTemplate Load (0.1ms)[0m  [1mSELECT "templates".* FROM "templates" WHERE "templates"."id" IS NULL LIMIT 1[0m
+  [1m[35mTemplate Load (0.2ms)[0m  SELECT "templates".* FROM "templates" ORDER BY created_at
+Rendered book_creator/preview.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 157ms (Views: 67.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:25 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 11:48:25 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/black_80.png" for 127.0.0.1 at 2012-01-10 11:48:25 -0200
+Served asset /black_80.png - 200 OK (41ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-01-10 11:48:25 -0200
+Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 200 OK (64ms)
+
+
+Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 11:48:25 -0200
+Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 200 OK (1ms)
