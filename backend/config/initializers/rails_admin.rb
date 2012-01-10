@@ -64,7 +64,7 @@ RailsAdmin.config do |config|
 
   config.model Template do
     # Found associations:
-    field :user, :has_one_association
+    field :users, :has_many_association
     # Found columns:
     field :id, :integer
     field :name, :string

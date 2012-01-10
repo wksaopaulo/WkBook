@@ -63671,3 +63671,390 @@ Served asset /ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png - 20
 
 Started GET "/assets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2012-01-10 11:48:25 -0200
 Served asset /ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png - 200 OK (1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+  Processing by RailsAdmin::MainController#dashboard as HTML
+Completed   in 0ms
+
+
+Started GET "/book_admins/sign_in" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.3ms)
+Rendered devise/sessions/new.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 101ms (Views: 83.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /colorpicker.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /master.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/book_creator.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /book_creator.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.jscrollpane.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /jquery.jscrollpane.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ui-lightness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /ui-lightness/jquery-ui-1.8.16.custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/swfobject.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /swfobject.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/book_creator.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /book_creator.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.jscrollpane.min.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /jquery.jscrollpane.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.mousewheel.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /jquery.mousewheel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:08 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/book_admins/sign_in" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZPPBoNv2KP1zVGOBx/j44TunOMvbPPYu4B9kAIFYgkM=", "book_admin"=>{"email"=>"lucas.dupin@wk.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mBookAdmin Load (0.1ms)[0m  [1mSELECT "book_admins".* FROM "book_admins" WHERE "book_admins"."email" = 'lucas.dupin@wk.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "book_admins" SET "last_sign_in_at" = '2012-01-09 13:57:17.511394', "current_sign_in_at" = '2012-01-10 13:52:12.319800', "sign_in_count" = 6, "updated_at" = '2012-01-10 13:52:12.320294' WHERE "book_admins"."id" = 1
+Redirected to http://0.0.0.0:3000/admin
+Completed 302 Found in 160ms
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+  Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mBookAdmin Load (0.1ms)[0m  [1mSELECT "book_admins".* FROM "book_admins" WHERE "book_admins"."id" = 1 LIMIT 1[0m
+  [1m[35mRailsAdmin::History Load (0.3ms)[0m  select count(*) as record_count, year, month from rails_admin_histories where month IN (9,10,11,12) and year = 2011 group by year, month
+  [1m[36mRailsAdmin::History Load (0.1ms)[0m  [1mselect count(*) as number, year, month from rails_admin_histories where month IN (1) and year = 2012 group by year, month[0m
+  [1m[35mRailsAdmin::History Load (0.1ms)[0m  SELECT "rails_admin_histories".* FROM "rails_admin_histories" WHERE (month = 1 and year = 2012)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "book_admins" [0m
+  [1m[35mBookAdmin Load (0.2ms)[0m  SELECT "book_admins".* FROM "book_admins" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "templates" [0m
+  [1m[35mTemplate Load (0.1ms)[0m  SELECT "templates".* FROM "templates" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "text_templates" [0m
+  [1m[35mTextTemplate Load (0.2ms)[0m  SELECT "text_templates".* FROM "text_templates" ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY updated_at desc LIMIT 1
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/bundler/gems/rails_admin-b1324902ede6/app/views/rails_admin/main/_history.html.haml (2.4ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/bundler/gems/rails_admin-b1324902ede6/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (17.6ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/bundler/gems/rails_admin-b1324902ede6/app/views/layouts/rails_admin/_secondary_navigation.html.haml (51.3ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/bundler/gems/rails_admin-b1324902ede6/app/views/layouts/rails_admin/_navigation.html.haml (5.1ms)
+Completed 200 OK in 304ms (Views: 140.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails_admin/jquery-ui-1.8.16.custom.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/jquery-ui-1.8.16.custom.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tabs.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /bootstrap-tabs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-twipsy.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /bootstrap-twipsy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /bootstrap-popover.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/bootstrap-alerts.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /bootstrap-alerts.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/imports.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.timeline.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/ra.timeline.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2012-01-10 11:52:12 -0200
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails_admin/timeline/arrow_left.png" for 127.0.0.1 at 2012-01-10 11:52:13 -0200
+Served asset /rails_admin/timeline/arrow_left.png - 304 Not Modified (21ms)
+
+
+Started GET "/admin/history/slider?from%5Bmonth%5D=-3&from%5Byear%5D=2012&to%5Bmonth%5D=1&to%5Byear%5D=2012" for 127.0.0.1 at 2012-01-10 11:52:13 -0200
+  Processing by RailsAdmin::HistoryController#slider as JSON
+  Parameters: {"from"=>{"month"=>"-3", "year"=>"2012"}, "to"=>{"month"=>"1", "year"=>"2012"}}
+  [1m[36mBookAdmin Load (0.1ms)[0m  [1mSELECT "book_admins".* FROM "book_admins" WHERE "book_admins"."id" = 1 LIMIT 1[0m
+  [1m[35mRailsAdmin::History Load (0.3ms)[0m  select count(*) as record_count, year, month from rails_admin_histories where month IN (-2,-1,0,1) and year = 2012 group by year, month
+Completed 200 OK in 49ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/rails_admin/timeline/arrow_right.png" for 127.0.0.1 at 2012-01-10 11:52:13 -0200
+Served asset /rails_admin/timeline/arrow_right.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/timeline/handler.png" for 127.0.0.1 at 2012-01-10 11:52:13 -0200
+Served asset /rails_admin/timeline/handler.png - 304 Not Modified (1ms)
+
+
+Started GET "/admin/templates" for 127.0.0.1 at 2012-01-10 11:52:16 -0200
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"templates"}
+  [1m[36mBookAdmin Load (0.1ms)[0m  [1mSELECT "book_admins".* FROM "book_admins" WHERE "book_admins"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 109ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  
+
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.3ms)
+
+
+Started GET "/admin/templates" for 127.0.0.1 at 2012-01-10 11:53:11 -0200
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"templates"}
+  [1m[35mBookAdmin Load (0.1ms)[0m  SELECT "book_admins".* FROM "book_admins" WHERE "book_admins"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 84ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  
+
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.2ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.9ms)
+
+
+Started GET "/admin/templates" for 127.0.0.1 at 2012-01-10 11:54:59 -0200
+  Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"templates"}
+  [1m[36mBookAdmin Load (0.2ms)[0m  [1mSELECT "book_admins".* FROM "book_admins" WHERE "book_admins"."id" = 1 LIMIT 1[0m
+  [1m[35mTemplate Load (0.2ms)[0m  SELECT "templates".* FROM "templates" ORDER BY templates.id desc LIMIT 20 OFFSET 0
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."template_id" = 17[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."template_id" = 16
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."template_id" = 15[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."template_id" = 14
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."template_id" = 13[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."template_id" = 12
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."template_id" = 10[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."template_id" = 9
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."template_id" = 8[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."template_id" = 6
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."template_id" = 5[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."template_id" = 4
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."template_id" = 3[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."template_id" = 2
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."template_id" = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "templates" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "templates" [0m
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/bundler/gems/rails_admin-b1324902ede6/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (213.8ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/bundler/gems/rails_admin-b1324902ede6/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.6ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/bundler/gems/rails_admin-b1324902ede6/app/views/layouts/rails_admin/_navigation.html.haml (5.6ms)
+Rendered /Users/lucasdupin/.rvm/gems/ruby-1.9.2-p180/bundler/gems/rails_admin-b1324902ede6/app/views/layouts/rails_admin/_models_tabs.html.haml (6.5ms)
+Completed 200 OK in 378ms (Views: 344.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/imports.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails_admin/jquery-ui-1.8.16.custom.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/jquery-ui-1.8.16.custom.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tabs.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /bootstrap-tabs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-twipsy.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /bootstrap-twipsy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /bootstrap-popover.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alerts.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /bootstrap-alerts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/jquery.colorpicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ra.timeline.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/ra.timeline.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2012-01-10 11:55:00 -0200
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (1ms)

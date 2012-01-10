@@ -5,4 +5,7 @@ class Template < ActiveRecord::Base
   mount_uploader :effect_file, EffectFileUploader
 
   attr_accessor :template_picture, :template_text
+
+  validates_presence_of :preview
+  validates_presence_of :effect_file
 end
