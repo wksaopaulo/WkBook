@@ -3,4 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/
 uploads/
+backend/public/pages/*
 .sass-cache/

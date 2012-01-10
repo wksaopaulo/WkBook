@@ -18,7 +18,7 @@ class BookCreatorController < ApplicationController
       current_user.save
     end
 
-    @templates = Template.all(:include => :user).delete_if {|t| not (t.user.nil? || t.user == current_user)}
+    @templates = Template.order('created_at')#.all(:include => :user).delete_if {|t| not (t.user.nil? || t.user == current_user)}
 
     #Did the user select a template?
     unless params['template'].nil?
