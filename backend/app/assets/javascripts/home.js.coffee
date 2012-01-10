@@ -11,4 +11,5 @@ $ ->
       w += $(it).find('.bookImage').width() + 5
     $('.pageHolder').width(w)
 
+  $(window).resize doResize
   $(".pageHolder img").imagesLoaded null, doResize

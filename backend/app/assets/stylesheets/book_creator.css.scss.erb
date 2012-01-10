@@ -126,7 +126,7 @@
   .jspTrack {
     background-color: #7D7D7D;
   }
-  .jspHorizontalBar { height: 8px; }
+  .jspHorizontalBar { height: 12px; }
 
   #effectAmount, #textColor {
     opacity: 0.5;
@@ -190,5 +190,23 @@
   img.selected {
     border: 2px solid #fff;
     height: $thumbHeight - 4;
+  }
+}
+
+#wait {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  left: 0;
+  top: 0;
+  padding-left: 50%;
+  padding-top: 25%;
+  display: none;
+  background-image: url(<%= asset_path "black_80.png" %>);
+
+  img {
+   margin-left: -431px; 
+   margin-top: -232px;
   }
 }

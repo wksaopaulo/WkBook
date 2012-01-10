@@ -17,18 +17,17 @@ window.setTextLayout = (id)->
 
 # Form submission flow
 window.submitPage = -> 
-    $("body").animate opacity: 0.3
-    $("body").prepend "<h1 style='text-align:center'>Aguarde, enviando sua foto</h1>"
+    $("#wait").fadeIn(500)
     setTimeout ->
       $("#effect")[0].upload();
     , 500
 window.submitTextPage = ->
     window.location.href = "/book_creator/save_text_template?id=#{ $("#templates img.preview.selected").attr('data-id') }"
 window.uploadComplete = ->
-    $("body").animate opacity: 1
+    $("#wait").fadeOut()
     window.location.href = "/book_creator/preview_text"
 window.uploadFailed = (msg)->
-    $("body").animate opacity: 1
+    $("#wait").fadeOut()
     alert msg
 
 # Page setup
