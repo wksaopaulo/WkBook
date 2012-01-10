@@ -30,6 +30,7 @@ package effects
 	{	
         override protected function getProcessedImage(amount:Number):DisplayObject
         {
+          
           var mosaic:Mosaic = new Mosaic(), i:int=0;
           while (mosaic.hasOwnProperty("tri" + ++i))
           {

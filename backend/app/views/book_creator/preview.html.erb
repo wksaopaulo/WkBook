@@ -30,7 +30,7 @@ function test(){
     <input type="button" value="OK" class="submit" onclick="submitPage(); return false;">
   </div>
   <div id="templates">
-    <table>
+    <table width="<%= @templates.size * 95 %>">
       <tr>
   <% @templates.each do |t| 
         is_current = @template.id == t.id ? 'selected' : ''

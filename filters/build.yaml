@@ -32,22 +32,16 @@ applications:
     #   output: public/Effect9.swf
     # - class: source/classes/effects/Effect10.as
     #   output: public/Effect10.swf
-    # - class: source/classes/effects/Effect11.as
-    #   output: public/Effect11.swf
     # - class: source/classes/effects/Effect12.as
     #   output: public/Effect12.swf
-    # - class: source/classes/effects/Effect13.as
-    #   output: public/Effect13.swf
-    # - class: source/classes/effects/Effect14.as
-    #   output: public/Effect14.swf
     # - class: source/classes/effects/Effect15.as
     #   output: public/Effect15.swf
     # - class: source/classes/effects/Effect16.as
     #   output: public/Effect16.swf
     # - class: source/classes/effects/Effect17.as
     #   output: public/Effect17.swf
-    - class: source/classes/effects/Effect18.as
-      output: public/Effect18.swf
+    # - class: source/classes/effects/Effect18.as
+    #   output: public/Effect18.swf
     # - class: source/classes/effects/Effect19.as
     #   output: public/Effect19.swf      
     # - class: source/classes/effects/Effect20.as
@@ -56,16 +50,14 @@ applications:
     #   output: public/Effect21.swf
     # - class: source/classes/effects/Effect22.as
     #   output: public/Effect22.swf
-    # - class: source/classes/effects/Effect23.as
-    #   output: public/Effect23.swf
     # - class: source/classes/effects/Effect24.as
     #   output: public/Effect24.swf
     # - class: source/classes/effects/Effect25.as
     #   output: public/Effect25.swf
     # - class: source/classes/effects/Effect26.as
     #   output: public/Effect26.swf
-    # - class: source/classes/effects/Effect27.as
-    #   output: public/Effect27.swf
+    - class: source/classes/effects/Effect27.as
+      output: public/Effect27.swf
       # exclude: source/classes/Other.as
 
 # asdoc:
