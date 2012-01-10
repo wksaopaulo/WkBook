@@ -46,7 +46,7 @@ class BookCreatorController < ApplicationController
 
     #Did the user already select one?
     @template = @templates.first
-    @template = current_user.text_template unless current_user.text_template.nil?
+    #@template = current_user.text_template unless current_user.text_template.nil?
   end
 
   def save_image
