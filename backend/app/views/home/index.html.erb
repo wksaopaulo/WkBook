@@ -1,7 +1,22 @@
-<div id="homeLogin">
-<%= link_to 'Login', controller: :book_creator %>
-</div>
 <div class="pageHolder">
+<div id="homeLogin" class="page">
+  <%= image_tag "cover.jpg", class: 'cover' %>
+  <%= form_for("user", :url => user_session_path) do |f| %>
+    <div>
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+    </div>
+    <div>
+      <%= f.label :password %><br>
+      <%= f.password_field :password %>
+    </div>
+    <div>
+      <%= f.check_box :remember_me %><%= f.label :remember_me, "Remember me" %>
+    </div>
+    <%= f.submit 'Sign in' %>
+    <%#= #link_to "Forgot your password?", new_password_path('user') %>
+  <% end %>
+</div>
 <%
 @users.each do |u| 
   if u.has_page? and not u.text_template.nil?

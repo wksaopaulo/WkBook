@@ -4,10 +4,9 @@
 
 $ ->
   doResize= ->
-    console.log "resize"
     w=0
     $('.pageHolder .page').each (idx, it)-> 
-      pageWidth = $(it).find('.bookTextTemplate').width()
+      pageWidth = $(it).find('.bookTextTemplate, .cover').width()
       $(it).css left: "#{w}px", width: pageWidth
       w += pageWidth + 5 #margin
     $('.pageHolder').width(w)
