@@ -127,13 +127,13 @@ setupFormInteraction = ->
     if $("#textPreview").length > 0
       resize = ->
         t_height = $(document).height() - 150
-        $("#textPreview").height(t_height)
-        $("#textPreview").css(marginLeft: $(document).width()/2 - t_height*1.5/2)
+        $("#textPreview").height(t_height).width(t_height*1.49).css(marginLeft: $(document).width()/2 - t_height*1.5/2)
       $(window).resize resize
       resize();
 
       $("#templates a").click ->
         $("#textTemplate").attr "src", $(this).find(".preview").attr("data-url")
+        $("#image").attr "style", $(this).find(".preview").attr("data-crop")
         $("#templates a img").removeClass "selected"
         $(this).find("img").addClass "selected"
 

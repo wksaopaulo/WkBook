@@ -117,6 +117,7 @@
 #textPreview {
   height: 70%;
   position: relative;
+  overflow: hidden;
 
   img {
     height:100%;
@@ -189,7 +190,11 @@
 
   $thumbHeight: 80px;
 
-  td{ position: relative; }
+  .composite{ 
+    position: relative; 
+    display: block;
+    float: left;
+  }
   .preview {
     position: absolute;
     z-index: 99999;

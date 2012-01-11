@@ -26,6 +26,7 @@ p.notice {
 .page {
   height: 100%;
   position: absolute;
+  overflow: hidden;
 }
 .bookImage { height: 100%; position: absolute; z-index: 0 }
 .bookTextTemplate { height: 100%; position: absolute; z-index: 1 }
