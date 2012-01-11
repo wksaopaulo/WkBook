@@ -41,7 +41,7 @@ class User < ActiveRecord::Base
 
     require 'RMagick'
     img = Magick::Image::read(self.high_res_image_path).first
-    img.resize_to_fit! 1000, 1000
+    img.resize_to_fit! 1190, 794
     img.write(self.image_path) { self.quality = 80 }
     img.resize_to_fit! 200, 200
     img.write(self.image_path.gsub("pages/", "pages/thumb_")) { self.quality = 80 }

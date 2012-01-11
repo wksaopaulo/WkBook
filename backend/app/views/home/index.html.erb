@@ -8,7 +8,7 @@
 %>
   <div class="page">
     <%= image_tag u.text_template.picture_url, :class => "bookTextTemplate" %>
-    <%= image_tag u.image_url, :class => "bookImage" %>
+    <%= image_tag u.image_url, :class => "bookImage", :style => image_area_to_css(u.text_template.image_area) %>
   </div>
   <%
   end

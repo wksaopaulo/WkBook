@@ -27,8 +27,8 @@ p.notice {
   height: 100%;
   position: absolute;
 }
-.bookImage { height: 100% }
-.bookTextTemplate { height: 100%; position: absolute; }
+.bookImage { height: 100%; position: absolute; z-index: 0 }
+.bookTextTemplate { height: 100%; position: absolute; z-index: 1 }
 .pageHolder {
   height: 100%;
 }

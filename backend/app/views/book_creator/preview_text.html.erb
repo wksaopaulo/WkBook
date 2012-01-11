@@ -1,6 +1,6 @@
 <% @thumb += "?r=#{rand}"%>
 <div id="textPreview">
-  <%= image_tag @image + "?r=#{rand}", :id => "image" %>
+  <%= image_tag @image + "?r=#{rand}", :id => "image", :style => image_area_to_css(@template.image_area) %>
   <%= image_tag @template.picture_url, :id => "textTemplate" %>
 </div>
 <div id="effectControls">
@@ -15,7 +15,7 @@
       %>
       <td><a href="#">
           <%= image_tag @thumb, :class => "thumb #{is_current}" %>
-          <%= image_tag(template.picture_url + "?r=#{rand}", :class => "#{is_current} preview", 'data-id' => template.id, 'data-url' => template.picture_url )%></a></td>
+          <%= image_tag(template.picture_url + "?r=#{rand}", :class => "#{is_current} preview", 'data-id' => template.id, 'data-url' => template.picture_url, 'data-crop' => image_area_to_css(template.image_area) )%></a></td>
   <% end %>
       </tr>
     </table>

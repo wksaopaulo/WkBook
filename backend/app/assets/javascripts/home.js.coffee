@@ -7,8 +7,9 @@ $ ->
     console.log "resize"
     w=0
     $('.pageHolder .page').each (idx, it)-> 
-      $(it).css left: "#{w}px"
-      w += $(it).find('.bookImage').width() + 5
+      pageWidth = $(it).find('.bookTextTemplate').width()
+      $(it).css left: "#{w}px", width: pageWidth
+      w += pageWidth + 5 #margin
     $('.pageHolder').width(w)
 
   $(window).resize doResize
