@@ -22,6 +22,7 @@ window.submitPage = ->
       $("#effect")[0].upload();
     , 500
 window.submitTextPage = ->
+    return unless confirm "Save your page now?"
     window.location.href = "/book_creator/save_text_template?id=#{ $("#templates img.preview.selected").attr('data-id') }"
 window.uploadComplete = ->
     $("#wait").fadeOut()
