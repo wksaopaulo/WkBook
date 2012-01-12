@@ -18,6 +18,9 @@
     <%= f.submit 'Sign in' %>
   <% end %>
 </div>
+<div class="page">
+  <%= image_tag "prefacio.jpg", class: 'cover', style: "height: 100%" %>
+</div>
 <%
 @users.each do |u| 
   if u.has_page? and not u.text_template.nil?

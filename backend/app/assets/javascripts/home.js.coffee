@@ -8,7 +8,7 @@ $ ->
     $('.pageHolder .page').each (idx, it)-> 
       pageWidth = $(it).find('.bookTextTemplate, .cover').width()
       $(it).css left: "#{w}px", width: pageWidth
-      w += pageWidth # + 5 #margin
+      w += pageWidth + 5 #margin
     $('.pageHolder').width(w)
     if window.initialUser
       $(window).scrollLeft($(".user" + window.initialUser).css('left').replace('px',''))
