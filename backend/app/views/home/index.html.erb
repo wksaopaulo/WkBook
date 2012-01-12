@@ -1,3 +1,8 @@
+<% unless params['user'].nil? %>
+  <script>
+    window.initialUser = <%=params['user']%>
+  </script>
+<%end%>
 <div class="pageHolder">
 <div id="homeLogin" class="page">
   <%= image_tag "cover.jpg", class: 'cover' %>
@@ -17,7 +22,7 @@
 @users.each do |u| 
   if u.has_page? and not u.text_template.nil?
 %>
-  <div class="page">
+<div class="page user<%= u.id %>">
     <%= image_tag u.text_template.picture_url, :class => "bookTextTemplate" %>
     <%= image_tag u.image_url, :class => "bookImage", :style => image_area_to_css(u.text_template.image_area) %>
     <span class="name"><%= u.name %></span>

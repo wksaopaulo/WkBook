@@ -62,6 +62,6 @@ class BookCreatorController < ApplicationController
     current_user.text_template_id = params['id']
     current_user.save
 
-    redirect_to "/"
+    redirect_to "/?user=#{current_user.id}"
   end
 end

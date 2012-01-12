@@ -10,6 +10,10 @@ $ ->
       $(it).css left: "#{w}px", width: pageWidth
       w += pageWidth # + 5 #margin
     $('.pageHolder').width(w)
+    if window.initialUser
+      $(window).scrollLeft($(".user" + window.initialUser).css('left').replace('px',''))
+      console.log($(".user" + window.initialUser).css('left'))
+
 
   $(window).resize doResize
   $(".pageHolder img").imagesLoaded null, doResize
