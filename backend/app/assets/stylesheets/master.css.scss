@@ -90,3 +90,12 @@ p.notice {
     }
   }
 }
+
+.balloon{
+  position: absolute;
+  padding: 15px;
+  color: white;
+  background: url(/assets/balloon_bg.png);
+  font-size:small;
+  position: relative;
+}

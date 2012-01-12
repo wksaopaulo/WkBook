@@ -13,3 +13,18 @@ $ ->
 
   $(window).resize doResize
   $(".pageHolder img").imagesLoaded null, doResize
+
+  # Balloons
+  $(".balloon").each (idx, it)->
+    vert = if $(it).hasClass("top") then "top" else "bottom"
+    hori = if $(it).hasClass("right") then "right" else "left"
+
+    $(it).append("<img src='/assets/balloon_#{vert}_#{hori}.png' style='#{hori}:0; #{vert}: -30px'>")
+
+    hover = $(it).attr("data-hover")
+    if hover
+      $(hover).hover ->
+        $(it).fadeIn(200)
+      , ->
+        $(it).fadeOut(200)
+      $(it).hide()

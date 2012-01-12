@@ -135,22 +135,32 @@
   
 
   .jspDrag {
-    background-color: #AAA;
+    background: url(/assets/scroll_drag.png) #aaa no-repeat center center;
+    border-left: solid 2px #ccc;
+    border-top: solid 2px #ccc;
+    border-right: solid 2px #777;
+    border-bottom: solid 2px #777;
   }
   .jspDrag.jspHover { background-color: #CCC }
   .jspTrack {
-    background-color: #7D7D7D;
+    background-color: #555;
   }
   .jspHorizontalBar { height: 12px; }
 
   #effectAmount, #textColor {
-    opacity: 0.5;
     height: 5px;
     margin-top: 2px;
   }
+  .ui-slider {
+    border-radius: 0;
+    background: #555;
+    border: none;
+  }
   .ui-slider-handle{
+    border-radius: 0;
     width: 13px;
     height: 13px;
+    background: url(/assets/scroll_drag.png) #aaa no-repeat center center;
   }
 
 

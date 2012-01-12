@@ -4,6 +4,9 @@
   <!-- W -->
   <div id="w">
     <%= image_tag 'w.jpg' %>
+    <span class="balloon right" data-hover="#w" style="top: -50px; left: -140px">
+      Select your picture
+    </span>
     <div class="userInput">
       <% @images.each do |i| %>
         <%= image_tag i %>
@@ -24,6 +27,9 @@
         <%= image_tag "type_placeholder#{i+1}.jpg" %>
       <% end %>
     </div>
+    <span class="balloon" data-hover="#k" style="top: -60px; right: -260px">
+      Tell us your story
+    </span>
   </div>
 
   <%= f.submit type: 'image', src: asset_path('ok.png'), class: 'submit'%>
