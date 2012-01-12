@@ -90,6 +90,7 @@ RailsAdmin.config do |config|
    field :template, :belongs_to_association
    # Found columns:
    field :id, :integer
+   field :name, :string
    field :email, :string
    field :password, :password
    field :password_confirmation, :password
@@ -101,9 +102,8 @@ RailsAdmin.config do |config|
    field :last_sign_in_at, :datetime
    field :current_sign_in_ip, :string
    field :last_sign_in_ip, :string
-   field :name, :string
    field :template_id, :integer
-   field :template_picture, :string
+   field :template_picture, :carrier_wave_image
    field :template_text, :text
    field :created_at, :datetime
    field :updated_at, :datetime
@@ -111,7 +111,14 @@ RailsAdmin.config do |config|
    list do; end
    export do; end
    show do; end
-   edit do; end
+   edit do;
+    field :name
+    field :email
+    field :password
+    field :password_confirmation
+    field :template_id
+    field :template_picture
+   end
    create do; end
    update do; end
   end

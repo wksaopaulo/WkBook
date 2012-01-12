@@ -27,6 +27,15 @@ p.notice {
   height: 100%;
   position: absolute;
   overflow: hidden;
+
+  .name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    background: white;
+    padding: 7px 10px;
+  }
 }
 .bookImage { height: 100%; position: absolute; z-index: 0 }
 .bookTextTemplate { height: 100%; position: absolute; z-index: 1 }
