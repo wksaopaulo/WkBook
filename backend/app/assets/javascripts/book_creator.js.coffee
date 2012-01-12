@@ -47,9 +47,9 @@ setupFormInteraction = ->
 
     # Scroll
     if $("#templates").length > 0
-      $("#templates").jScrollPane()
+      $("#templates").jScrollPane(showArrows: true)
       $(window).resize ->
-        $("#templates").jScrollPane()
+        $("#templates").jScrollPane(showArrows: true)
 
     # Select file on click
     $('#w').mousemove (e)-> 

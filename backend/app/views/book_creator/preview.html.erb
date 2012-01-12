@@ -26,6 +26,7 @@ function test(){
 </div>
 <div id="effectControls">
   <div class="topControls">
+    <span class="balloon" style="left: 50%; top: -50px" data-timing="3,5">Drag to change the effect amount</span>
     <div id="effectAmount"></div>
     <input type="button" value="OK" class="submit" onclick="submitPage(); return false;">
   </div>
@@ -47,5 +48,5 @@ function test(){
 </div>
 
 <script type="text/javascript">
-  window.effectAmountValue = <%=current_user.effect_amount%>;
+  window.effectAmountValue = 0.5; <%=current_user.effect_amount%>;
 </script>

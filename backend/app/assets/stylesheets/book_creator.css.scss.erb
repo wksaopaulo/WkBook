@@ -136,16 +136,22 @@
 
   .jspDrag {
     background: url(/assets/scroll_drag.png) #aaa no-repeat center center;
-    border-left: solid 2px #ccc;
-    border-top: solid 2px #ccc;
+    border-left: solid 2px #777;
+    border-top: solid 1px #aaa;
     border-right: solid 2px #777;
-    border-bottom: solid 2px #777;
   }
   .jspDrag.jspHover { background-color: #CCC }
   .jspTrack {
     background-color: #555;
   }
   .jspHorizontalBar { height: 12px; }
+  .jspArrow {
+    background: url(/assets/arrow_left.png) #aaa no-repeat center center;
+    border: solid 1px #a1a1a1;
+  }
+  .jspArrowRight {
+    background: url(/assets/arrow_right.png) #aaa no-repeat center center;
+  }
 
   #effectAmount, #textColor {
     height: 5px;
@@ -214,16 +220,20 @@
     left: 0;
     top: 0;
   }
-  img {
-    /*box-shadow: 5px 5px 5px #ccc;*/
-    height: $thumbHeight;
-    margin: 5px;
-  }
 
-  img.selected {
-    border: 2px solid #fff;
-    height: $thumbHeight - 4;
+  #templates{
+    img {
+      /*box-shadow: 5px 5px 5px #ccc;*/
+      height: $thumbHeight;
+      margin: 5px;
+    }
+
+    img.selected {
+      border: 2px solid #fff;
+      height: $thumbHeight - 4;
+    }
   }
+  
 }
 
 #wait {

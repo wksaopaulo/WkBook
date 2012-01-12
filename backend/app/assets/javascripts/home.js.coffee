@@ -28,3 +28,8 @@ $ ->
       , ->
         $(it).fadeOut(200)
       $(it).hide()
+
+    timing = $(it).attr("data-timing")
+    if timing
+      timing = timing.split ","
+      $(it).hide().delay(timing[0]*1000).fadeIn().delay(timing[1] * 1000).fadeOut();

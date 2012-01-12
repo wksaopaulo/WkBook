@@ -98,4 +98,8 @@ p.notice {
   background: url(/assets/balloon_bg.png);
   font-size:small;
   position: relative;
+
+  img {
+    position: absolute;
+  }
 }
