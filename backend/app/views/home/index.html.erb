@@ -36,8 +36,8 @@
   params.wmode = "transparent";
   
   flashvars = {
-    title: '<%=j current_user.template_title %>',
-    text: '<%=j current_user.template_text %>',
+    title: '<%=j u.template_title %>',
+    text: '<%=j u.template_text %>',
     text_layout: <%= u.text_template.text_id %>
   }
   swfobject.embedSWF("<%= asset_path("TextLayout.swf") + "?r=#{rand}" %>", "<%= "textTemplate_#{u.id}" %>", "100%", "100%", "10.1.0", "<%= asset_path('expressInstall.swf')%>", flashvars, params);
