@@ -37,12 +37,13 @@ p.notice {
     background: white;
     padding: 7px 10px;
   }
-}
-.bookImage { height: 100%; position: absolute; z-index: 0 }
-.bookTextTemplate { height: 100%; position: absolute; z-index: 1 }
-.pageHolder {
-  height: 100%;
-  display: inline;
+
+  .bookImage { height: 100%; z-index: 0 }
+  .bookTextTemplate, object { height: 100%; position: absolute; z-index: 1; visibility: hidden }
+  .pageHolder {
+    height: 100%;
+    display: inline;
+  }
 }
 #homeLogin {
   height: 100%;

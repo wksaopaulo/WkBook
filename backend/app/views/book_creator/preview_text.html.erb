@@ -11,7 +11,7 @@
   flashvars = {
     title: '<%=j current_user.template_title %>',
     text: '<%=j current_user.template_text %>',
-    text_layout: 1
+    text_layout: <%= @templates.first.id %>
   }
 swfobject.embedSWF("<%= asset_path("TextLayout.swf") + "?r=#{rand}" %>", "swf", "100%", "100%", "10.1.0", "<%= asset_path('expressInstall.swf')%>", flashvars, params);
 </script>
@@ -38,7 +38,7 @@ swfobject.embedSWF("<%= asset_path("TextLayout.swf") + "?r=#{rand}" %>", "swf", 
       %>
       <div class="composite"><a href="#">
           <%= image_tag @thumb, :class => "thumb #{is_current}" %>
-          <%= image_tag(template.picture_url + "?r=#{rand}", :class => "#{is_current} preview", 'data-id' => template.id, 'data-id' => template.text_id, 'data-crop' => image_area_to_css(template.image_area) )%></a></div>
+          <%= image_tag(template.picture_url + "?r=#{rand}", :class => "#{is_current} preview", 'data-id' => template.id, 'data-frame' => template.text_id, 'data-crop' => image_area_to_css(template.image_area) )%></a></div>
   <% end %>
     </div>
   </div>

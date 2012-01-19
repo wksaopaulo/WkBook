@@ -124,7 +124,7 @@ setupFormInteraction = ->
 
       $("#templates a").click ->
         #Change style
-        $("#swf")[0].setTextLayout $(this).find(".preview").attr("data-id")
+        $("#swf")[0].setTextLayout $(this).find(".preview").attr("data-frame")
         #Move image
         $("#image").attr "style", $(this).find(".preview").attr("data-crop")
         #Selected item

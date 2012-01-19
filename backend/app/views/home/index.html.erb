@@ -25,7 +25,26 @@
 @users.each do |u| 
   if u.has_page? and not u.text_template.nil?
 %>
+<script type="text/javascript">
+  var params = {};
+  params.play = "false";
+  params.loop = "false";
+  params.menu = "false";
+  params.allowfullscreen = "true";
+  params.allowscriptaccess = "always";
+  params.bgcolor = "#000000"
+  params.wmode = "transparent";
+  
+  flashvars = {
+    title: '<%=j current_user.template_title %>',
+    text: '<%=j current_user.template_text %>',
+    text_layout: <%= u.text_template.text_id %>
+  }
+  swfobject.embedSWF("<%= asset_path("TextLayout.swf") + "?r=#{rand}" %>", "<%= "textTemplate_#{u.id}" %>", "100%", "100%", "10.1.0", "<%= asset_path('expressInstall.swf')%>", flashvars, params);
+</script>
+
 <div class="page user<%= u.id %>">
+    <div id="textTemplate_<%= u.id %>" class="bookTextTemplate"></div>
     <%= image_tag u.text_template.picture_url, :class => "bookTextTemplate" %>
     <%= image_tag u.image_url, :class => "bookImage", :style => image_area_to_css(u.text_template.image_area) %>
     <span class="name"><%= u.name %></span>
