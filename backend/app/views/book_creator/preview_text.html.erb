@@ -1,7 +1,30 @@
+<script type="text/javascript">
+  var params = {};
+  params.play = "false";
+  params.loop = "false";
+  params.menu = "false";
+  params.allowfullscreen = "true";
+  params.allowscriptaccess = "always";
+  params.bgcolor = "#000000"
+  params.wmode = "transparent";
+  
+  flashvars = {
+    title: '<%=j current_user.template_title %>',
+    text: '<%=j current_user.template_text %>',
+    text_layout: 1
+  }
+swfobject.embedSWF("<%= asset_path("TextLayout.swf") + "?r=#{rand}" %>", "swf", "100%", "100%", "10.1.0", "<%= asset_path('expressInstall.swf')%>", flashvars, params);
+</script>
+<style>
+  body {
+    overflow: hidden;
+  }
+</style>
+
 <% @thumb += "?r=#{rand}"%>
 <div id="textPreview">
-  <%= image_tag @image + "?r=#{rand}", :id => "image", :style => image_area_to_css(@template.image_area) %>
-  <%= image_tag @template.picture_url, :id => "textTemplate" %>
+  <%= image_tag @image + "?r=#{rand}", :id => "image", :style => image_area_to_css(@templates.first.image_area) %>
+  <div id="swf"></div>
 </div>
 <div id="effectControls">
   <div class="topControls">
@@ -11,11 +34,11 @@
   <div id="templates">
     <div style="width: <%=135 * @templates.length %>px">
   <% @templates.each do |template| 
-        is_current = @template.id == template.id ? 'selected' : ''
+        is_current = @templates.first.id == template.id ? 'selected' : ''
       %>
       <div class="composite"><a href="#">
           <%= image_tag @thumb, :class => "thumb #{is_current}" %>
-          <%= image_tag(template.picture_url + "?r=#{rand}", :class => "#{is_current} preview", 'data-id' => template.id, 'data-url' => template.picture_url, 'data-crop' => image_area_to_css(template.image_area) )%></a></div>
+          <%= image_tag(template.picture_url + "?r=#{rand}", :class => "#{is_current} preview", 'data-id' => template.id, 'data-id' => template.text_id, 'data-crop' => image_area_to_css(template.image_area) )%></a></div>
   <% end %>
     </div>
   </div>

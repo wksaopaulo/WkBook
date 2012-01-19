@@ -41,12 +41,8 @@ class BookCreatorController < ApplicationController
     text_size += current_user.template_text.size rescue 0
     text_size /= 10 #word count approximate
     puts "text_size is #{text_size}"
-    @templates = TextTemplate.find :all, :conditions => ["? >= min_text and ? <= max_text", text_size, text_size]
-    @templates = TextTemplate.all if @templates.empty?
-
-    #Did the user already select one?
-    @template = @templates.first
-    #@template = current_user.text_template unless current_user.text_template.nil?
+    #@templates = TextTemplate.find :all, :conditions => ["? >= min_text and ? <= max_text", text_size, text_size]
+    @templates = TextTemplate.all # if @templates.empty?
   end
 
   def save_image

@@ -1,7 +1,7 @@
 ---
 default:
     - debug: true
-      open: public/Effect27.swf
+      open: public/TextLayout.swf
       extras: -use-network=false -static-link-runtime-shared-libraries
     
 library-path:
@@ -58,6 +58,8 @@ applications:
     #   output: public/Effect26.swf
     - class: source/classes/effects/Effect27.as
       output: public/Effect27.swf
+    - class: source/classes/base/TextLayout.as
+      output: public/TextLayout.swf
       # exclude: source/classes/Other.as
 
 # asdoc:

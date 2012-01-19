@@ -114,16 +114,6 @@ setupFormInteraction = ->
         #This is the value we will send to the server
         $("form .amount").val(ui.value);
 
-    #Text color slider
-    slideVal = if typeof(window.textColorValue) == 'undefined' then 0 else window.textColorValue
-    $("#textColor").slider(value: slideVal, step:0.01, min: 0, max: 1).bind 'slidechange', (event, ui)->
-        c = Math.floor(ui.value * textColors.length)
-        c-- if c >= textColors.length
-
-        $("#effect")[0].setTextColor textColors[c]
-        #Value we will send to server
-        $("form .textColor").val(ui.value);
-
     #Text page resize and interaction
     if $("#textPreview").length > 0
       resize = ->
@@ -133,8 +123,11 @@ setupFormInteraction = ->
       resize();
 
       $("#templates a").click ->
-        $("#textTemplate").attr "src", $(this).find(".preview").attr("data-url")
+        #Change style
+        $("#swf")[0].setTextLayout $(this).find(".preview").attr("data-id")
+        #Move image
         $("#image").attr "style", $(this).find(".preview").attr("data-crop")
+        #Selected item
         $("#templates a img").removeClass "selected"
         $(this).find("img").addClass "selected"
 

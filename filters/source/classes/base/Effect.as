@@ -27,9 +27,7 @@ package base
 	public class Effect extends Sprite
 	{
 		protected var image:Bitmap;
-		protected var text:String;
-		protected var title:String;
-
+		
 		private var _result:DisplayObject;
 		private var _textColor:uint=0;
 
@@ -40,25 +38,12 @@ package base
 
 		//Holds all book content
 		protected var bookCanvas:Sprite;
-		//Text layouts
-		protected var textOverlays:TextOverlays
 
     	public function Effect()
 		{
 			//Stage setup
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			stage.align = StageAlign.TOP_LEFT;
-
-			//Get the text form loaderInfo
-		  	this.title = loaderInfo.parameters['title'] || "";
-		  	this.text = loaderInfo.parameters['text'] || "";
-
-			//Text
-			textOverlays = new TextOverlays();
-			textOverlays.width = BOOK_WIDTH;
-			textOverlays.scaleY = textOverlays.scaleX;
-			setTextLayout(loaderInfo.parameters['text_layout'] || 0);
-			setTextColor(loaderInfo.parameters['text_color'] || 0x0);
 
 			stage.addEventListener(Event.RESIZE, onResize);
 
@@ -75,8 +60,6 @@ package base
 					//Enabling customization
 					if(ExternalInterface.available){
 						ExternalInterface.addCallback("setAmount", setAmount);
-						ExternalInterface.addCallback("setTextLayout", setTextLayout);
-						ExternalInterface.addCallback("setTextColor", setTextColor);
 						ExternalInterface.addCallback("upload", upload);
 					} else
 						trace("No external interface available");
@@ -96,40 +79,6 @@ package base
 		{
 			callback();
 			return;
-		}
-
-		//Set text disposition
-		protected function setTextLayout(number:uint):void
-		{
-			textOverlays.gotoAndStop(number+1);
-			//try{
-			//	textOverlays.title.text = title;
-			//	textOverlays.text.text = text;
-			//} catch(e:Error) {
-			//	textOverlays.text.text = title + "\n\n" + text;
-			//}
-			updateTextColor();
-			
-		}
-		//Set text color
-		protected function setTextColor(c:uint):void
-		{
-			_textColor = c;
-			updateTextColor();
-		}
-		protected function updateTextColor():void
-		{
-			//Create a text format with the selected color
-			var fmt:TextFormat = new TextFormat;
-			fmt.color = _textColor;
-
-			for (var i:int = 0; i < textOverlays.numChildren; i++)
-			{
-				var tf:DisplayObject = textOverlays.getChildAt(i);
-				if(tf is TLFTextField){
-					(tf as TLFTextField).setTextFormat(fmt);
-				}
-			}
 		}
 
 		//Method to override
@@ -201,9 +150,6 @@ package base
 
 			//Add to the content holder
 			bookCanvas.addChild(o)
-
-			//Keep text on top
-			bookCanvas.addChild(textOverlays);
 
 			return o;
 		}
