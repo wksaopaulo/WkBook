@@ -12,7 +12,6 @@ $ ->
     $('.pageHolder').width(w)
     if window.initialUser
       $(window).scrollLeft($(".user" + window.initialUser).css('left').replace('px',''))
-      console.log($(".user" + window.initialUser).css('left'))
 
 
   $(window).resize doResize
