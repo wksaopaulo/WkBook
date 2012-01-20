@@ -38,7 +38,7 @@ p.notice {
     padding: 7px 10px;
   }
 
-  .bookImage { height: 100%; z-index: 0 }
+  .bookImage { height: 100%; z-index: 0; position: absolute }
   .bookTextTemplate, object { height: 100%; position: absolute; z-index: 1; visibility: hidden }
   .pageHolder {
     height: 100%;
