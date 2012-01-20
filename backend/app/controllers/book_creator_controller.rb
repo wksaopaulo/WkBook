@@ -39,7 +39,6 @@ class BookCreatorController < ApplicationController
     text_size = 0
     text_size += current_user.template_title.size rescue 0
     text_size += current_user.template_text.size rescue 0
-    text_size /= 10 #word count approximate
     puts "text_size is #{text_size}"
     @templates = TextTemplate.find :all, :conditions => ["? >= min_text and ? <= max_text", text_size, text_size]
     @templates = TextTemplate.all if @templates.empty?

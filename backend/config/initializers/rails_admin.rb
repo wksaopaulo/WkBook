@@ -85,6 +85,14 @@ RailsAdmin.config do |config|
     update do; end
    end
 
+  config.model TextTemplate do
+    field :picture, :carrier_wave_image
+    field :min_text, :integer
+    field :max_text, :integer
+    field :text_id, :integer
+    field :rect, :string
+  end
+
  config.model User do
    # Found associations:
    field :template, :belongs_to_association
