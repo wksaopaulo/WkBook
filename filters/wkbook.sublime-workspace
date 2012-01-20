@@ -4,12 +4,68 @@
 		"selected_items":
 		[
 			[
-				"onRe",
-				"onResize"
+				"to",
+				"toUpperCase"
+			],
+			[
+				"al",
+				"allText"
+			],
+			[
+				"Strin",
+				"String"
+			],
+			[
+				"text",
+				"text"
+			],
+			[
+				"cha",
+				"charIndex"
+			],
+			[
+				"te",
+				"textOverlays"
 			],
 			[
 				"for",
-				"for: for"
+				"for	for"
+			],
+			[
+				"ca",
+				"catch	catch"
+			],
+			[
+				"tex",
+				"textOverlays"
+			],
+			[
+				"sw",
+				"switch	switch"
+			],
+			[
+				"sta",
+				"stageWidth"
+			],
+			[
+				"BOOK",
+				"BOOK_HEIGHT"
+			],
+			[
+				"PIXEL",
+				"PIXEL_SIZE"
+			],
+			[
+				"PI",
+				"PIXELATE"
+			],
+			[
+				"res",
+				"resizedImage"
+			],
+			[
+				"onRe",
+				"onResize"
 			],
 			[
 				"setTe",
@@ -75,30 +131,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "source/classes/base/Effect.as",
-			"settings":
-			{
-				"buffer_size": 7918,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "build.yaml",
-			"settings":
-			{
-				"buffer_size": 1913,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/libs/com/adobe/images/PNGEncoder.as",
-			"settings":
-			{
-				"buffer_size": 5040,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -124,44 +156,61 @@
 	},
 	"file_history":
 	[
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect.as",
+		"/Users/lucasdupin/src/wkbook/filters/build.yaml",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/TextLayout.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/drawRect.as",
+		"/Users/lucasdupin/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/Users/lucasdupin/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect17.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect0.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect27.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect26.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect16.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect18.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect6.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect7.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect5.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect2.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect19.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect1.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect10.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect11.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect12.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect13.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect14.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect20.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect21.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect22.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect23.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect24.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect25.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect3.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect4.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect9.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/bitmapData.as",
+		"/Users/lucasdupin/src/grab-the-pack/app/media/js/src/views/pack.coffee",
+		"/Users/lucasdupin/Downloads/HTML5_Compatability/index.html",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/com/adobe/crypto/SHA256.as",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/com/adobe/images/PNGEncoder.as",
 		"/Users/lucasdupin/Desktop/desc_palestra.txt",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/com/adobe/fileformats/vcard/VCardParser.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/potato/modules/tracking/Tracker.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect15.as",
-		"/Users/lucasdupin/src/wkbook/filters/build.yaml",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect.as",
 		"/Users/lucasdupin/src/wk/Gemfile",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect18.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect17.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect16.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect14.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect11.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect6.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect7.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect9.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect12.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect8.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect10.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect1.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/removeAllChildren.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect2.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect5.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect3.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/com/greensock/plugins/BlurFilterPlugin.as",
 		"/Users/lucasdupin/Downloads/bitmap-snapshot/libs/com/quietless/bitmap/BitmapSnapshot.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/com/adobe/images/JPGEncoder.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect20.as",
 		"/Users/lucasdupin/Desktop/arrow.aep",
-		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/bitmapData.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/fitAndMask.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/filters/Sobel.as",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect13.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/ru/inspirit/image/edges/SobelEdgeDetector.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/ru/inspirit/image/edges/CannyEdgeDetector.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/shader/deformer.pbk",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/utils/ValueChanger.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/shader/warp.pbk",
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/effects/Effect4.as",
 		"/Users/lucasdupin/src/wkbook/filters/Rakefile",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/utils/extractFromMovieClip.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect",
@@ -218,6 +267,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"<open folders>"
 		]
 	},
 	"find_state":
@@ -225,6 +275,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\n",
+			"textOverlays.hei",
+			"7",
+			"StringUtil.trim",
+			"onResize",
+			"textOVer",
+			"setTextLayout",
+			"setTextColor",
+			"textOver",
+			"text",
+			"amount",
+			"data",
+			"new Bit",
+			"19",
+			"backgroundColor='#FFFFFF'",
+			"upload",
+			"PIXEL_SIZE",
+			"PIXELATE",
+			"amount",
+			"scale",
 			"addPageSizedChild",
 			".text",
 			"textfo",
@@ -289,9 +359,11 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"\\\\n",
+			"backgroundColor='#000000'",
 			"6",
 			"5",
 			"4",
@@ -309,91 +381,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "source/classes/base/Effect.as",
-					"settings":
-					{
-						"buffer_size": 7918,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5693,
-								5693
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ActionScript3/ActionScript 3.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2823.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "build.yaml",
-					"settings":
-					{
-						"buffer_size": 1913,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1701,
-								1460
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 250.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "source/libs/com/adobe/images/PNGEncoder.as",
-					"settings":
-					{
-						"buffer_size": 5040,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ActionScript3/ActionScript 3.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 291.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -428,6 +417,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 214.0
+	},
 	"replace":
 	{
 		"height": 62.0
@@ -439,16 +432,132 @@
 		"selected_items":
 		[
 			[
+				"drawrec",
+				"source/libs/dupin/display/drawRect.as"
+			],
+			[
+				"eff17",
+				"source/classes/effects/Effect17.as"
+			],
+			[
+				"27",
+				"source/classes/effects/Effect27.as"
+			],
+			[
+				"26",
+				"source/classes/effects/Effect26.as"
+			],
+			[
+				"effe27",
+				"source/classes/effects/Effect27.as"
+			],
+			[
+				"eff27",
+				"source/classes/effects/Effect27.as"
+			],
+			[
+				"ef18",
+				"source/classes/effects/Effect18.as"
+			],
+			[
+				"effec16",
+				"source/classes/effects/Effect16.as"
+			],
+			[
+				"16",
+				"source/classes/effects/Effect16.as"
+			],
+			[
+				"effe6",
+				"source/classes/effects/Effect6.as"
+			],
+			[
+				"effec",
+				"source/classes/base/Effect.as"
+			],
+			[
+				"eff7",
+				"source/classes/effects/Effect7.as"
+			],
+			[
+				"eff6",
+				"source/classes/effects/Effect6.as"
+			],
+			[
+				"effec5",
+				"source/classes/effects/Effect5.as"
+			],
+			[
+				"effe2",
+				"source/classes/effects/Effect2.as"
+			],
+			[
+				"effect",
+				"source/classes/base/Effect.as"
+			],
+			[
+				"19",
+				"source/classes/effects/Effect19.as"
+			],
+			[
+				"eff3",
+				"source/classes/effects/Effect3.as"
+			],
+			[
+				"build",
+				"build.yaml"
+			],
+			[
+				"eff0",
+				"source/classes/effects/Effect0.as"
+			],
+			[
+				"bitmap",
+				"source/libs/dupin/display/bitmapData.as"
+			],
+			[
+				"buil",
+				"build.yaml"
+			],
+			[
+				"25",
+				"source/classes/effects/Effect25.as"
+			],
+			[
+				"24",
+				"source/classes/effects/Effect24.as"
+			],
+			[
+				"23",
+				"source/classes/effects/Effect23.as"
+			],
+			[
+				"22",
+				"source/classes/effects/Effect22.as"
+			],
+			[
+				"20",
+				"source/classes/effects/Effect20.as"
+			],
+			[
+				"effectas",
+				"source/classes/base/Effect.as"
+			],
+			[
+				"ef4",
+				"source/classes/effects/Effect4.as"
+			],
+			[
+				"effe20",
+				"source/classes/effects/Effect20.as"
+			],
+			[
 				"pngen",
 				"source/libs/com/adobe/images/PNGEncoder.as"
 			],
 			[
 				"bui",
 				"build.yaml"
-			],
-			[
-				"effec",
-				"source/classes/base/Effect.as"
 			],
 			[
 				"effe",
@@ -469,10 +578,6 @@
 			[
 				"17",
 				"source/classes/effects/Effect17.as"
-			],
-			[
-				"16",
-				"source/classes/effects/Effect16.as"
 			],
 			[
 				"14",
@@ -499,16 +604,8 @@
 				"source/classes/effects/Effect7.as"
 			],
 			[
-				"eff6",
-				"source/classes/effects/Effect6.as"
-			],
-			[
 				"eff8",
 				"source/classes/effects/Effect8.as"
-			],
-			[
-				"buil",
-				"build.yaml"
 			],
 			[
 				"12",
@@ -519,10 +616,6 @@
 				"source/classes/effects/Effect10.as"
 			],
 			[
-				"effe6",
-				"source/classes/effects/Effect6.as"
-			],
-			[
 				"remove",
 				"source/libs/dupin/display/removeAllChildren.as"
 			],
@@ -531,16 +624,8 @@
 				"source/classes/effects/Effect5.as"
 			],
 			[
-				"build",
-				"build.yaml"
-			],
-			[
 				"effec3",
 				"source/classes/effects/Effect3.as"
-			],
-			[
-				"effe2",
-				"source/classes/effects/Effect2.as"
 			],
 			[
 				"buils",
@@ -552,10 +637,6 @@
 			],
 			[
 				"effect1",
-				"source/classes/effects/Effect1.as"
-			],
-			[
-				"effect",
 				"source/classes/effects/Effect1.as"
 			],
 			[
@@ -573,10 +654,6 @@
 			[
 				"effec15",
 				"source/classes/effects/Effect15.as"
-			],
-			[
-				"bitmap",
-				"source/libs/dupin/display/bitmapData.as"
 			],
 			[
 				"fitan",
