@@ -27,13 +27,13 @@ package base
 
 			//Get the text form loaderInfo
 		  	this.title = loaderInfo.parameters['title'] || "Lorem";
-		  	this.text = loaderInfo.parameters['text'] || "ipsum";
+		  	this.text = loaderInfo.parameters['text'] || "Nossa, nossa\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nDelícia, delícia\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nSábado na balada\nA galera começou a dançar\nE passou a menina mais linda\nTomei coragem e comecei a falar\nNossa, nossa\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nDelícia, delícia\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nSábado na balada\nA galera começou a dançar\nE passou a menina mais linda\nTomei coragem e comecei a falar\nNossa, nossa\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nDelícia, delícia\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego";
 
 		  	//Text
 			textOverlays = new TextOverlays();
 
 		  	addChild(textOverlays);
-		  	setTextLayout(loaderInfo.parameters['text_layout'] || 1);
+		  	setTextLayout(loaderInfo.parameters['text_layout'] || 5);
 			
 		  	if (ExternalInterface.available)
 				ExternalInterface.addCallback("setTextLayout", setTextLayout);
@@ -98,14 +98,15 @@ package base
 				case 4 :
 					var words:Array = allText.split(" ");
 					if (words.length > 0)
-						textOverlays.top.text = words.shift();
+						textOverlays.top.text = words.shift().toUpperCase();
 					if (words.length > 0) {
 						var last:String = words.pop();
 						textOverlays.text.text = words.join(" ");
 						words = [last];
-					}
+					} else { textOverlays.text.text = "" }
 					if (words.length > 0)
-						textOverlays.bottom.text = words.join(" ");
+						textOverlays.bottom.text = words.join(" ").toUpperCase();
+					else { textOverlays.bottom.text = "" }
 					
 					textOverlays.top.y = textOverlays.text.y + textOverlays.text.height/2 - textOverlays.text.textHeight/2 - textOverlays.top.textHeight - 50;
 					textOverlays.bottom.y = textOverlays.text.y + textOverlays.text.height/2 + textOverlays.text.textHeight/2 + 50;
@@ -116,6 +117,10 @@ package base
 					
 					textOverlays.text.text = allText;
 					textOverlays.quad.y = textOverlays.text.height/2 - textOverlays.text.textHeight/2 - 50;
+					if (textOverlays.quad.y < textOverlays.quad.height){
+						textOverlays.quad.visible = false;
+						textOverlays.quad.y = textOverlays.quad.height;
+					}
 					
 				break;
 				case 7 :
