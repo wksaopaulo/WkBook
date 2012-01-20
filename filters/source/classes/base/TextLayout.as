@@ -9,6 +9,7 @@ package base
 	import flash.display.*;
 	import flash.events.*;
 	import flash.net.*;
+	import effects.Block;
 
 	[SWF(width='1280', height='800', backgroundColor='#330033', frameRate='60')]
 	public class TextLayout extends Sprite
@@ -25,14 +26,14 @@ package base
 			stage.align = StageAlign.TOP_LEFT;
 
 			//Get the text form loaderInfo
-		  	this.title = loaderInfo.parameters['title'] || "";
-		  	this.text = loaderInfo.parameters['text'] || "";
+		  	this.title = loaderInfo.parameters['title'] || "Lorem";
+		  	this.text = loaderInfo.parameters['text'] || "ipsum";
 
 		  	//Text
 			textOverlays = new TextOverlays();
 
 		  	addChild(textOverlays);
-		  	setTextLayout(loaderInfo.parameters['text_layout'] || 15);
+		  	setTextLayout(loaderInfo.parameters['text_layout'] || 1);
 			
 		  	if (ExternalInterface.available)
 				ExternalInterface.addCallback("setTextLayout", setTextLayout);
@@ -65,6 +66,31 @@ package base
 			var allText:String = StringUtil.trim(title + "\n" + text);
 			switch (number)
 			{
+				case 1 :
+					var charIndex:int = 0;
+					while (textOverlays.allText.hasOwnProperty("b"+charIndex))
+					{
+						//Get the text holder
+						var block:Block = textOverlays.allText["b"+charIndex];
+
+						//What are we going to fill it with?
+						var t:String = " ";
+						if (charIndex < allText.length)
+							t = allText.substring(charIndex, charIndex + 1);
+						trace("text at " + charIndex + " of " + allText.length + " is '" + t + "'")
+						
+						//Decide if it's a triangle
+						if (t === " " || t == "\n")
+						{
+							block.gotoAndStop(2)
+						} else
+						{
+							block.gotoAndStop(1)
+							block.f.text = t.toUpperCase();
+						}
+						charIndex++;
+					}
+				break;
 				case 2 :
 					textOverlays.text.text = allText;
 				break;
