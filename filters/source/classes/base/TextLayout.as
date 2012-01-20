@@ -1,8 +1,8 @@
 package base
 {
+	import dupin.math.map;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
-	import dupin.display.drawRect;
 	import com.adobe.utils.StringUtil;
 	import flash.events.Event;
 	import flash.external.ExternalInterface;
@@ -26,14 +26,14 @@ package base
 			stage.align = StageAlign.TOP_LEFT;
 
 			//Get the text form loaderInfo
-		  	this.title = loaderInfo.parameters['title'] || "Lorem";
-		  	this.text = loaderInfo.parameters['text'] || "Nossa, nossa\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nDelícia, delícia\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nSábado na balada\nA galera começou a dançar\nE passou a menina mais linda\nTomei coragem e comecei a falar\nNossa, nossa\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nDelícia, delícia\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nSábado na balada\nA galera começou a dançar\nE passou a menina mais linda\nTomei coragem e comecei a falar\nNossa, nossa\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego\nDelícia, delícia\nAssim você me mata\nAi se eu te pego, ai ai se eu te pego";
+		  	this.title = loaderInfo.parameters['title'] || "";
+		  	this.text = loaderInfo.parameters['text'] || "";
 
 		  	//Text
 			textOverlays = new TextOverlays();
 
 		  	addChild(textOverlays);
-		  	setTextLayout(loaderInfo.parameters['text_layout'] || 5);
+		  	setTextLayout(loaderInfo.parameters['text_layout'] || 1);
 			
 		  	if (ExternalInterface.available)
 				ExternalInterface.addCallback("setTextLayout", setTextLayout);
@@ -44,17 +44,20 @@ package base
 
 		protected function onResize(e:Event=null):void
 		{
-			if (textOverlays.width / textOverlays.height > stage.stageWidth / stage.stageHeight) {
-				textOverlays.width = stage.stageWidth;
+			var propW:Number = stage.stageWidth * (textOverlays.width/textOverlays.scaleX / textOverlays.pageBase.width);
+			var propH:Number = stage.stageHeight * (textOverlays.height/textOverlays.scaleY / textOverlays.pageBase.height);
+
+			if (textOverlays.pageBase.width / textOverlays.pageBase.height > stage.stageWidth / stage.stageHeight) {
+				textOverlays.width = propW;
 				textOverlays.scaleY = textOverlays.scaleX;
 			} else 
 			{
-				textOverlays.height = stage.stageHeight;
+				textOverlays.height = propH;
 				textOverlays.scaleX = textOverlays.scaleY;
 			}
 
-			textOverlays.x = stage.stageWidth/2 - textOverlays.width/2;
-			textOverlays.y = stage.stageHeight/2 - textOverlays.height/2;
+			textOverlays.x = stage.stageWidth/2 - textOverlays.pageBase.width*textOverlays.scaleX/2;
+			textOverlays.y = stage.stageHeight/2 - textOverlays.pageBase.height*textOverlays.scaleY/2;
 		}
 
 		//Set text disposition
@@ -127,13 +130,13 @@ package base
 				case 8 :
 					textOverlays.title.text = title;
 					textOverlays.text.text = text;
+					textOverlays.text.height = textOverlays.text.textHeight + 10;
 
 					var h:Number = textOverlays.title.textHeight + 40 + textOverlays.text.textHeight;
 					textOverlays.title.y = textOverlays.pageBase.height/2 - h/2;
 					textOverlays.text.y = textOverlays.pageBase.height/2 - h/2 + textOverlays.title.textHeight + 40;
 					if (textOverlays.text.textHeight < textOverlays.text.height){
 						textOverlays.text.height = textOverlays.text.textHeight + 10;
-						drawRect(textOverlays, textOverlays.text.x, textOverlays.text.y, textOverlays.text.width, textOverlays.text.height)
 					}
 						
 				break;
