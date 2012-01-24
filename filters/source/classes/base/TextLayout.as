@@ -1,5 +1,6 @@
 package base
 {
+	import flash.text.TextFieldAutoSize;
 	import dupin.math.map;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
@@ -99,19 +100,38 @@ package base
 				break;
 				case 3 :
 				case 4 :
-					var words:Array = allText.split(" ");
+					var words:Array = allText.split(/\s|\n/);
 					if (words.length > 0)
-						textOverlays.top.text = words.shift().toUpperCase();
+						textOverlays.top.top.text = words.shift().toUpperCase();
 					if (words.length > 0) {
 						var last:String = words.pop();
 						textOverlays.text.text = words.join(" ");
 						words = [last];
 					} else { textOverlays.text.text = "" }
 					if (words.length > 0)
-						textOverlays.bottom.text = words.join(" ").toUpperCase();
+						textOverlays.bottom.bottom.text = words.join(" ").toUpperCase();
 					else { textOverlays.bottom.text = "" }
+
+					// Make sprites as big as the text
+					textOverlays.top.top.width = textOverlays.top.top.textWidth + 50;
+					textOverlays.bottom.bottom.width = textOverlays.bottom.bottom.textWidth + 50;
 					
-					textOverlays.top.y = textOverlays.text.y + textOverlays.text.height/2 - textOverlays.text.textHeight/2 - textOverlays.top.textHeight - 50;
+					//Match size of the big text fields with the size of the page
+					var big:MovieClip, small:MovieClip;
+					if (textOverlays.top.width > textOverlays.bottom.width)
+					{
+						big = textOverlays.top;
+						small = textOverlays.bottom;
+					} else
+					{
+						big = textOverlays.top;
+						small = textOverlays.bottom;
+					}
+					// adjust width to match page
+					big.width = 1200;
+					big.scaleY = small.scaleX = small.scaleY = big.scaleX;
+
+					textOverlays.top.y = textOverlays.text.y + textOverlays.text.height/2 - textOverlays.text.textHeight/2 - textOverlays.top.top.textHeight/2 - 120;
 					textOverlays.bottom.y = textOverlays.text.y + textOverlays.text.height/2 + textOverlays.text.textHeight/2 + 50;
 					
 				break;
