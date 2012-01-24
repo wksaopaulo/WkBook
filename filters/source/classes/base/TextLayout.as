@@ -27,14 +27,14 @@ package base
 			stage.align = StageAlign.TOP_LEFT;
 
 			//Get the text form loaderInfo
-		  	this.title = loaderInfo.parameters['title'] || "Alorem ipsum";
-		  	this.text = loaderInfo.parameters['text'] || "Lorem ipsum dolor sit amet";
+		  	this.title = loaderInfo.parameters['title'] || "";
+		  	this.text = loaderInfo.parameters['text'] || "";
 
 		  	//Text
 			textOverlays = new TextOverlays();
 
 		  	addChild(textOverlays);
-		  	setTextLayout(loaderInfo.parameters['text_layout'] || 14);
+		  	setTextLayout(loaderInfo.parameters['text_layout'] || 1);
 			
 		  	if (ExternalInterface.available)
 				ExternalInterface.addCallback("setTextLayout", setTextLayout);
