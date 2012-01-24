@@ -114,6 +114,7 @@ package base
 
 					// Make sprites as big as the text
 					textOverlays.top.top.width = textOverlays.top.top.textWidth + 50;
+					textOverlays.top.top.height = textOverlays.top.top.textHeight;
 					textOverlays.bottom.bottom.width = textOverlays.bottom.bottom.textWidth + 50;
 					
 					//Match size of the big text fields with the size of the page
@@ -124,14 +125,14 @@ package base
 						small = textOverlays.bottom;
 					} else
 					{
-						big = textOverlays.top;
-						small = textOverlays.bottom;
+						big = textOverlays.bottom;
+						small = textOverlays.top;
 					}
 					// adjust width to match page
 					big.width = 1200;
 					big.scaleY = small.scaleX = small.scaleY = big.scaleX;
 
-					textOverlays.top.y = textOverlays.text.y + textOverlays.text.height/2 - textOverlays.text.textHeight/2 - textOverlays.top.top.textHeight/2 - 120;
+					textOverlays.top.y = textOverlays.text.y + textOverlays.text.height/2 - textOverlays.text.textHeight/2 - textOverlays.top.height;
 					textOverlays.bottom.y = textOverlays.text.y + textOverlays.text.height/2 + textOverlays.text.textHeight/2 + 50;
 					
 				break;
