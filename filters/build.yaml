@@ -56,8 +56,8 @@ applications:
     #   output: public/Effect25.swf
     # - class: source/classes/effects/Effect26.as
     #   output: public/Effect26.swf
-    - class: source/classes/effects/Effect27.as
-      output: public/Effect27.swf
+    # - class: source/classes/effects/Effect27.as
+    #   output: public/Effect27.swf
     - class: source/classes/base/TextLayout.as
       output: public/TextLayout.swf
       # exclude: source/classes/Other.as

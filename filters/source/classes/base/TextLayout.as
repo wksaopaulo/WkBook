@@ -27,14 +27,14 @@ package base
 			stage.align = StageAlign.TOP_LEFT;
 
 			//Get the text form loaderInfo
-		  	this.title = loaderInfo.parameters['title'] || "";
-		  	this.text = loaderInfo.parameters['text'] || "";
+		  	this.title = loaderInfo.parameters['title'] || "Alorem ipsum";
+		  	this.text = loaderInfo.parameters['text'] || "Lorem ipsum dolor sit amet";
 
 		  	//Text
 			textOverlays = new TextOverlays();
 
 		  	addChild(textOverlays);
-		  	setTextLayout(loaderInfo.parameters['text_layout'] || 1);
+		  	setTextLayout(loaderInfo.parameters['text_layout'] || 14);
 			
 		  	if (ExternalInterface.available)
 				ExternalInterface.addCallback("setTextLayout", setTextLayout);
@@ -170,13 +170,18 @@ package base
 				break;
 				case 13 :
 				case 14 :
-					textOverlays.title.text = allText.substring(0,3).toUpperCase();;
 					try
 					{
+						textOverlays.mc.field.text = allText.split(/\s|\n/)[0];
+						textOverlays.mc.field.height = textOverlays.mc.field.textHeight+5;
+						textOverlays.mc.field.width = textOverlays.mc.field.textWidth+5;
+						textOverlays.mc.width = 1150;
+						textOverlays.mc.scaleY = textOverlays.mc.scaleX;
 						var paragraphs:Array = allText.split("\n");
 						textOverlays.text1.text = paragraphs.shift();
 						textOverlays.text2.text = paragraphs.join("\n");
 					} catch (e:Error) {}
+					textOverlays.text1.y = textOverlays.mc.y + textOverlays.mc.field.textHeight*textOverlays.mc.scaleY;
 					textOverlays.text2.y = textOverlays.text1.y + textOverlays.text1.textHeight + 50;
 					textOverlays.text2.height = textOverlays.pageBase.height - (textOverlays.text2.y);
 					
