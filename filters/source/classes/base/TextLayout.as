@@ -81,7 +81,6 @@ package base
 						var t:String = " ";
 						if (charIndex < allText.length)
 							t = allText.substring(charIndex, charIndex + 1);
-						trace("text at " + charIndex + " of " + allText.length + " is '" + t + "'")
 						
 						//Decide if it's a triangle
 						if (t === " " || t == "\n")

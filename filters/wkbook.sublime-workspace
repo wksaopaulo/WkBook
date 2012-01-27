@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"scal",
+				"scaleY"
+			],
+			[
+				"text",
+				"textHeight"
+			],
+			[
+				"te",
+				"textOverlays"
+			],
+			[
+				"tex",
+				"textOverlays"
+			],
+			[
+				"1",
+				"1200"
+			],
+			[
+				"Strin",
+				"StringUtil"
+			],
+			[
+				"sca",
+				"scaleX"
+			],
+			[
+				"bi",
+				"big"
+			],
+			[
+				"pro",
+				"propH"
+			],
+			[
+				"prp",
+				"propH"
+			],
+			[
+				"sta",
+				"stageWidth"
+			],
+			[
+				"pa",
+				"pageBase"
+			],
+			[
+				"base",
+				"pageBase"
+			],
+			[
 				"to",
 				"toUpperCase"
 			],
@@ -12,20 +64,8 @@
 				"allText"
 			],
 			[
-				"Strin",
-				"String"
-			],
-			[
-				"text",
-				"text"
-			],
-			[
 				"cha",
 				"charIndex"
-			],
-			[
-				"te",
-				"textOverlays"
 			],
 			[
 				"for",
@@ -36,16 +76,8 @@
 				"catch	catch"
 			],
 			[
-				"tex",
-				"textOverlays"
-			],
-			[
 				"sw",
 				"switch	switch"
-			],
-			[
-				"sta",
-				"stageWidth"
 			],
 			[
 				"BOOK",
@@ -156,9 +188,10 @@
 	},
 	"file_history":
 	[
-		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect.as",
-		"/Users/lucasdupin/src/wkbook/filters/build.yaml",
+		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/math/map.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/TextLayout.as",
+		"/Users/lucasdupin/src/wkbook/filters/build.yaml",
+		"/Users/lucasdupin/src/wkbook/filters/source/classes/base/Effect.as",
 		"/Users/lucasdupin/src/wkbook/filters/source/libs/dupin/display/drawRect.as",
 		"/Users/lucasdupin/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
 		"/Users/lucasdupin/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
@@ -275,6 +308,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Rect",
+			"draR",
 			"\\n",
 			"textOverlays.hei",
 			"7",
@@ -419,7 +454,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 214.0
+		"height": 94.0
 	},
 	"replace":
 	{
@@ -431,6 +466,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"bui",
+				"build.yaml"
+			],
+			[
+				"texlayo",
+				"source/classes/base/TextLayout.as"
+			],
+			[
+				"map",
+				"source/libs/dupin/math/map.as"
+			],
+			[
+				"textlay",
+				"source/classes/base/TextLayout.as"
+			],
 			[
 				"drawrec",
 				"source/libs/dupin/display/drawRect.as"
@@ -554,10 +605,6 @@
 			[
 				"pngen",
 				"source/libs/com/adobe/images/PNGEncoder.as"
-			],
-			[
-				"bui",
-				"build.yaml"
 			],
 			[
 				"effe",
